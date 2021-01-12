@@ -1,0 +1,13 @@
+.main-image {
+  width: 40%;
+}
+
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  color: rgba(177, 4, 4, 0.829);
+}
+
+.ingredients {
+  font-family: monospace;
+}
