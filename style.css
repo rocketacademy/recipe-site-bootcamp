@@ -1,0 +1,21 @@
+img {
+  width: 500px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(116, 101, 101);
+}
+.noodles-recipe {
+  font-size: larger;
+}
+
+body {
+  margin: 20px 100px;
+  width: 60%;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
