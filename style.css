@@ -10,3 +10,12 @@ a:hover {
 .noodles-recipe {
   font-size: larger;
 }
+
+body {
+  margin: 20px 100px;
+  width: 60%;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
