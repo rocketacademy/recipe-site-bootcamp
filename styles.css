@@ -1,0 +1,26 @@
+nav {
+  background-color: cadetblue;
+  text-align: center;
+  margin: 0;
+  height: 5vh;
+  width: 100%;
+  position: fixed;
+}
+h1 {
+  margin: 0;
+}
+.recipe {
+  padding-top: 7vh;
+}
+@media only screen and (min-width: 800px) {
+  .noodle-image {
+    background-image: url("https://www.errenskitchen.com/wp-content/uploads/2018/08/Quick-Easy-Chinese-Noodle-Soup1200.jpg");
+    width: 70vw;
+    margin: auto;
+    height: 30vw;
+  }
+}
+.category-page {
+  width: 70vw;
+  margin: auto;
+}
