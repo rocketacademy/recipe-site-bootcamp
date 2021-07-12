@@ -1,0 +1,16 @@
+body {
+  background: white;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.cover {
+  max-height: 350px;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  align: center;
+  text-align: left;
+}
