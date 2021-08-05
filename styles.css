@@ -1,0 +1,65 @@
+body {
+ text-align: center;
+  margin: auto;
+  background-color: chartreuse;
+}
+
+div > nav {
+  width: 100%;
+  margin: auto;
+}
+.nav {
+  color: black;
+  /* width: 100%; */
+  justify-content: center;
+  font-size: 25px;
+}
+
+.header {
+  margin: 80px;
+  width: 760px;
+
+}
+
+.header1 {
+  margin: 30px;
+}
+
+.row {
+  justify-content: center;
+}
+
+p {
+border: 1px solid black;
+border-radius: 15p;
+background-color: coral;
+margin-bottom: 0;
+}
+
+.prep {
+border: 1px solid black;
+border-radius: 15p;
+background-color: cadetblue;
+}
+
+.ingredient {
+border: 1px solid black;
+border-radius: 15p;
+background-color: coral;
+}
+
+.sauce {
+border: 1px solid black;
+border-radius: 15p;
+background-color: cadetblue;
+}
+
+.instructions {
+border: 1px solid black;
+border-radius: 15p;
+background-color: coral;
+}
+
+.img{
+  padding-bottom: 40px;
+}
