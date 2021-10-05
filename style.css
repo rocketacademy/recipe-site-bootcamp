@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(240, 233, 223);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 600px;
+  margin: auto;
+}
+
+.image {
+  width: 400px;
+}
+
+.image-button {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
