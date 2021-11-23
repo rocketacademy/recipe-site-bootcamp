@@ -1,9 +1,106 @@
+<!-- Create a main page that links to each noodle recipe page. (Use an a tag.) Create a link on each recipe page linking back to the main page. -->
+<!-- Create new pages for onion and chicken ingredients respectively. On each page, create lists of links to recipes containing that ingredient, and a back link to the main page. Create links to the ingredient pages from the main page. -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+
+<style>
+  body {
+    margin: 50px 0px 10px 0px;
+    font-family: "Raleway",sans-serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    position:relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: darkgray;
+  border-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor:pointer;
+  width: 350px;
+  font-family: "Raleway", sans-serif;
+  }
+
+.container .btn:hover {
+  background-color: palevioletred;
+  color:white;
+}
+</style>
+
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Noodles!</title>
-</head>
-<body>
-  <h1>Noodles</h1>
-</body>
+  <head>
+    <title>Noodle Recipes</title>
+  </head>
+  <body>
+    <h1>Noodles Recipes</h1>
+    <h2>Chicken ingredients</h2>
+    <div class="container">
+      <img src="soy-sauce-chicken-noodle.jpg" alt="soy sauce chicken" />
+      <button onclick="window.location.href='file:///C:/Users/J%20&%20B/Documents/bootcamp/noodleprojects/recipe3.html'"class="btn">Soy Sauce Chicken</button>
+      </a>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <img src="chicken-stir-fry-with-rice-noodles.jpg" alt="stir fried chicken with rice noodles" />
+      <button onclick="window.location.href='file:///C:/Users/J%20&%20B/Documents/bootcamp/noodleprojects/recipe4.html'"class="btn">Stir fried chicken with rice noodles</button>
+      </a>
+    </div>
+
+    <h2>Onions ingredients</h2>
+    <div class="container">
+      <img src="Shanghai-spring-onion-oil-noodles.jpg" alt="Shanghai Spring Onion Oil Noodles" />
+      <button onclick="window.location.href='file:///C:/Users/J%20&%20B/Documents/bootcamp/noodleprojects/recipe2.html'"class="btn">Shanghai Spring Onion Oil Noodles</button>
+      </a>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <img src="scallion-oil-noodles.jpg" alt="Scallion Oil Noodles" />
+      <button onclick="window.location.href='file:///C:/Users/J%20&%20B/Documents/bootcamp/noodleprojects/recipe1.html'"class="btn">Scallion Oil Noodless</button>
+      </a>
+    </div>
+
+    <h2>Recipes by Category</h2>
+    <div class="container">
+      <img src="chicken.jpg" alt="Chicken" />
+      <button onclick="window.location.href='file:///C:/Users/J%20&%20B/Documents/bootcamp/noodleprojects/chicken.html'"class="btn">Chicken Recipes</button>
+      </a>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <img src="onion.jpg" alt="Onions" />
+      <button onclick="window.location.href='file:///C:/Users/J%20&%20B/Documents/bootcamp/noodleprojects/onion.html'" class="btn">Onion Recipes</button>
+      </a>
+    </div>
+  </body>
 </html>
