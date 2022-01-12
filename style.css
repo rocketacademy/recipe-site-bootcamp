@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(247, 213, 213);
+}
+
+h1 {
+  color: rgb(49, 48, 48);
+  font-family: cursive;
+}
+
+h2 {
+  color: rgb(49, 48, 48);
+  font-size: 1.2em;
+  font-family: cursive;
+}
+
+img {
+  width: 500px;
+}
+
+p {
+  color: dimgrey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+ol,
+ul {
+  color: rgb(60, 100, 110);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
