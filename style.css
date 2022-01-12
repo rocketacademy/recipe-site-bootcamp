@@ -1,0 +1,18 @@
+img {
+  width: 500px;
+}
+
+body {
+  padding: 20px;
+  background-color: lemonchiffon;
+}
+
+div {
+  padding: 10px;
+}
+
+ul,
+ol {
+  background-color: lightyellow;
+  border-radius: 2%;
+}
