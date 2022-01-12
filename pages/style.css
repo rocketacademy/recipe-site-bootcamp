@@ -1,0 +1,16 @@
+body {
+  background-image: url("../images/noodles.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  color: black;
+  font-size: 300%;
+  text-align: center;
+  background-color: white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
