@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(35, 49, 62);
+  height: 50px;
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  color: bisque;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(95, 27, 27);
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  align-items: center;
+}
+
+.flex-container h2 {
+  margin: 20px 200px;
+}
