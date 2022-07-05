@@ -1,0 +1,11 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  max-width: 800px;
+  background: #232323;
+  color: bisque;
+}
+
+ul {
+  list-style: none;
+}
