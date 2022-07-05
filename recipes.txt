@@ -1,0 +1,77 @@
+CHEESE POTATO BREAD
+For the dough
+1) Add flour, milk, melted unsalted butter and a pinch of salt to a bowl.
+2) Mix with a spatula or wooden spoon until a lump is formed.
+3) Knead by hand for 5 minutes or until the dough does not stick to the side of the bowl.
+4) Cover with cling film and let the dough rest in the refridgerator for 1 hour.
+
+For the filling
+1) Peel and steam the potato until a fork or tooth pick pierces the potato easily.
+2) Mash the potato well.
+3) Add 2 tablespoons of mayonnaise to the mashed potato.
+
+Assembly
+1) Remove the dough from fridge and roll out into a round and flat shape (about 22cm) - thin is imperative to ensure even cooking.
+2) Put a generous amount of mozzarella cheese in the center of the dough.
+3) Lay mashed potato directly on top of the mozzarella cheese center.
+4) Add more mozzarella cheese to cover the mashed potato. At this point you should have 3 layers - cheese, potato, cheese.
+5) Close the dough up by pinching as you would close up a dumpling.
+6) Gently flatten the dough with a rolling pin to a diameter depending on the size of your pan. (Go as big as you can)
+
+Cooking
+1) Melt some butter in a hot skillet.
+2) Place the dough in seam-side down.
+3) Gently brush the top of the dough with more butter.
+4) Panfry over medium low heat until golden brown on both sides. You can flip this as many times as you want.
+5) Remove from pan, cut into bite-sized pieces and serve warm.
+
+
+143 grams all-purpose flour
+43 grams unsweetened cocoa
+200 grams light brown sugar
+1 teaspoon salt
+1 teaspoon baking soda
+57 grams unsalted butter, melted
+1/4 cup fresh vegetable oil
+120 grams full fat sour cream or plain whole milk yogurt, at room temperature
+2 large eggs plus 1 egg yolk, at room temperature
+2 teaspoons vanilla extract
+136 grams shredded zucchini, from about 1 medium zucchini
+170 grams semisweet chocolate chips
+
+
+ZUCCHINI CHOCO CAKE
+1) Preheat oven to 175 Celsius. Line an 8x8" metal baking pan with parchment paper then spray with nonstick cooking spray or butter the pan. If using a glass pan, preheat the oven to 170 Celsius.
+2) In a large bowl, whisk together flour, cocoa, sugar, salt, and baking soda.
+3) In a small bowl, whisk together melted butter, oil, sour cream, eggs, egg yolk, and vanilla extract.
+4) Make a well in the center of the dry ingredients and pour in the wet ingredients.
+5) Stir until a few streaks of flour remain.
+6) Squeeze out any additional moisture from the shredded zucchini before adding to the batter. Skipping this step will result in a gummy cake texture.
+7) Add in the chocolate chips. Stir until everything is just barely combined. 
+8) Pour the batter into the prepared pan and bake for 30 minutes (35 - 40 minutes if using glass) or until a toothpick comes out clean. It's normal for your cake to sink slightly in the middle.
+9) Let cool completely before serving.
+
+
+
+2 packages (20 sheets) graham crackers
+156g unsalted butter, melted
+25g  sugar
+2 225g packages cream cheese, room temperature
+1 382g can sweetened condensed milk
+57g fresh lemon juice
+1 teaspoon vanilla extract
+
+1) Put graham crackers in a large resealable plastic bag, and crush them with a rolling pin until very fine crumbs form.
+2) Pour crumbs into a medium-sized bowl; stir in sugar. Add butter, and stir until well combined.
+3) Press the crumb mixture into a 9" springform pan, spreading it 1 1/2 to 2 inches up the side; press flat. Chill crust in freezer at least 10 minutes.
+4) While chilling the crust, make the filling: Using an electric mixer set at medium-high speed, beat the cream cheese in a large bowl until smooth. Beat in the condensed milk a little at a time, scraping the sides of the bowl, as necessary. Beat in the lemon juice and vanilla.
+5) Pour the filling into the crust; smooth the top with a rubber spatula. Cover with plastic wrap, and refrigerate until firm, 2 1/2 to 3 hours.
+6) Unclasp sides of pan, and remove cheesecake.
+
+ <h2>Recipes by Category</h2>
+    <ul>
+      <li>
+        <a href="../recipe-site-bootcamp/savoury.html">Savoury Treats</a>
+      </li>
+      <li><a href="../recipe-site-bootcamp/sweets.html">Sweet Treats</a></li>
+    </ul>
