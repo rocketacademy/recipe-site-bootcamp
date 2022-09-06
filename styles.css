@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Berkshire Swash", cursive;
+}
+
+img {
+  max-width: 800px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#home {
+  padding-top: 20px;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
