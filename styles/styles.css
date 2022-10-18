@@ -6,11 +6,60 @@ h1 {
   padding-bottom: 20px;
 }
 
-h2 {
-  font-size: 30px;
-  text-align: center;
+.chineseanchor {
+  color: white;
 }
 
-h3 {
+.westernanchor {
+  color: white;
+}
+
+.chineselink {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  background-color: rgb(255, 157, 0);
+  border-radius: 200px;
+  width: 400px;
+  font-size: 30px;
   text-align: center;
+  justify-content: center;
+  border: solid;
+  border-width: 0.5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.chineselink:hover {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.westernlink:hover {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.westernlink {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  background-color: red;
+  border-radius: 200px;
+  width: 400px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  border: solid;
+  border-width: 0.5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
