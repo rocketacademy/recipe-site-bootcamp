@@ -1,19 +1,7 @@
 * {
+  background-color: #fdfaf2;
   font-family: "Dosis", sans-serif;
 }
-
-/* #header {
-  text-align: center;
-  font-family: "Gemunu Libre", sans-serif;
-  font-weight: bolder;
-  font-size: 40pt;
-  margin-top: 18px;
-  margin-bottom: 6px;
-}
-
-body {
-  touch-action: manipulation;
-} */
 
 .container {
   display: flex;
@@ -34,4 +22,9 @@ a {
 
 a:hover {
   color: palevioletred;
+}
+
+img {
+  border-radius: 8px;
+  max-height: 400px;
 }
