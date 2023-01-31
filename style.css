@@ -1,0 +1,37 @@
+* {
+  font-family: "Dosis", sans-serif;
+}
+
+/* #header {
+  text-align: center;
+  font-family: "Gemunu Libre", sans-serif;
+  font-weight: bolder;
+  font-size: 40pt;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+body {
+  touch-action: manipulation;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px;
+}
+
+.item {
+  padding: 10px 20px 0px 20px;
+  border-radius: 8px;
+}
+
+a {
+  font-style: italic;
+}
+
+a:hover {
+  color: palevioletred;
+}
