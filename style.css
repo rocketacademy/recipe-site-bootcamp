@@ -1,0 +1,30 @@
+* {
+  background-color: #fdfaf2;
+  font-family: "Dosis", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px;
+}
+
+.item {
+  padding: 10px 20px 0px 20px;
+  border-radius: 8px;
+}
+
+a {
+  font-style: italic;
+}
+
+a:hover {
+  color: palevioletred;
+}
+
+img {
+  border-radius: 8px;
+  max-height: 400px;
+}
