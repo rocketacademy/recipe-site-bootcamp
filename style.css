@@ -3,8 +3,16 @@ body {
   padding: 0px 30px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 h2 {
@@ -15,6 +23,42 @@ h3 {
   font-size: 25px;
 }
 
+h4 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+div {
+  margin-bottom: 30px;
+}
+
 img {
   width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.bigtext {
+  text-transform: uppercase;
+  font-size: 150px;
+  font-weight: 100;
+  letter-spacing: -3px;
+  padding-bottom: 0;
+  line-height: 0.9;
+}
+
+#recipe-header {
+  display: flex;
+}
+
+#timings {
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
 }
