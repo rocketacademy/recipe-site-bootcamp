@@ -10,7 +10,7 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">TastyMeals</div>
+        <div class="logo">YodaMeals</div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -18,19 +18,73 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Listing</a></li>
-            <li><a href="#">Cuisines</a></li> <!- dropdown menu here ->
+            <li><a href="#home">Homepage</a></li>
+            <li><a href="#listing">Listing</a></li>
+            <li><a href="#cuisines">Cuisines</a></li> <!- dropdown menu here ->
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <h1>Recipes</h1>
+      <section id="home">
+        <div class="content">
+          <div class="intro">
+            <div class="intro-item">
+              <h1>Welcome To Galaxy Kitchen</h1>
+              <h3>May the <span class="force">culinary force</span> be with you!</h3>
+            </div>
+            
 
+          </div>
+          
+          
+        </div>
+        
+      </section>
+      <section id="listing">
+        <div class="content">
+          <h1>Listing</h1>
+          <h3>Below is a list of Yoda's favourite cuisines</h3>
+          <ul class="listing-details">
+            <li><a href="#">Prawn Noodles</a></li>
+            <li><a href="#">Ba Ku Teh</a></li>
+            <li><a href="#">Salt and Pepper Chicken</a></li>
+            <li><a href="#">Claypot Tofu</a></li>
+          </ul>
+        </div>
+        
+      </section>
+      <section id="cuisines">
+        <div class="content">
+          <h1>Cuisines</h1>
+          <div class="flex-container">
+            <div class="cuisine-item"> 
+              <h2>Prawn Noodles</h2>
+              <img src="./assets/images/prawn-noodles1.png" alt="">
+              <p>A savory bowl of noodles cooked in prawn and bone broth with succulent prawns and other ingredients.</p>
+            </div>
+            <div class="cuisine-item"> 
+              <h2>Ba Ku Teh</h2>
+              <img src="./assets/images/bakuteh1.png" alt="">
+              <p>Eaten with a bowl of rice, this pork-bone broth is usually eaten with fried dough.</p>
+            </div>
+            <div class="cuisine-item"> 
+              <h2>Salt and Pepper Chicken</h2>
+              <img src="./assets/images/saltandpepperchicken1.png" alt="">
+              <p>Yummy and savory!</p>
+            </div>
+            <div class="cuisine-item"> 
+              <h2>Claypot Tofu</h2>
+              <img src="./assets/images/claypottofu1.png" alt="">
+              <p>Braised tofu with lots of vegetables, mushroom and prawns.</p>
+            </div>
+             
+          </div>
+        </div>
+        
+      </section>
 
     </main>
-    
     <script src="script.js"></script>
   </body>
 </html>
