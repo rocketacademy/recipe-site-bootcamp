@@ -1,0 +1,103 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 0px 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+div#header {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+div {
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.bigtext {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: -3px;
+  padding-bottom: 0;
+  line-height: 0.9;
+}
+
+@media (min-width: 921px) {
+  #recipe-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .bigtext {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 920px) {
+  #recipe-header {
+    display: block;
+    margin: 0;
+  }
+  .bigtext {
+    font-size: 120px;
+  }
+}
+
+#timings {
+  padding-top: 10px;
+}
+
+a:hover {
+  color: blue;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#backlinks {
+  display: flex;
+}
+
+#backlinks a {
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  margin-right: 5px;
+}
+
+#backlinks a:hover {
+  background-color: blue;
+}
