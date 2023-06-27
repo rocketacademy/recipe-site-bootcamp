@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap");
+
+body {
+  margin: 40px;
+  font-family: "Poppins";
+  background: #d1dedd;
+}
+ul,
+li {
+  padding: 8px;
+  color: #828b8a;
+}
+
+h1,
+h2 {
+  color: #767f7e;
+}
+p {
+  color: #828b8a;
+}
+
+a {
+  text-decoration: none; /* remove default underline */
+  color: #828b8a;
+}
+
+a:hover {
+  text-decoration: underline; /* add underline on hover */
+  text-decoration-color: rgb(9, 107, 140);
+  font-size: 15px;
+  color: #328987;
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(0.95);
+}
+
+.img-1 {
+  width: 300px;
+  height: 400px;
+}
+
+.img-2 {
+  width: 300px;
+  height: 300px;
+}
+
+header {
+  max-width: 1200px;
+  margin: 40px auto;
+  border-bottom: 1px solid #bbc7c7;
+}
+
+article img,
+article.feature img {
+  width: 100%;
+  border: 4px solid #fff;
+  border-radius: 8px;
+}
+
+/* Main grid-container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
+  gap: 40px;
+  margin: 20px auto;
+}
+
+/* Nested Grid for featured category */
+article.featured {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  align-items: center;
+  border-bottom: 1px solid #bbc7c7;
+  padding-bottom: 40px;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 980px) {
+  article {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  article,
+  article.featured {
+    display: block;
+    margin: 0 20px;
+  }
+}
