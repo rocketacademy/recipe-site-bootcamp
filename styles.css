@@ -6,7 +6,8 @@ body {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-img:hover {
+img:hover,
+.card:hover {
 	transform: scale(1.1);
 	transition: transform 330ms ease-in-out;
 }
@@ -23,13 +24,54 @@ img:hover {
 }
 .hero article li,
 .ingredients ul li,
-main li {
+main li,
+.dishes li {
 	list-style: none;
+	text-decoration: none;
+}
+
+.dishes {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	align-items: center;
+	height: 80vh;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	border: solid 1px black;
+	border-radius: 15px;
+	padding: 2rem;
+}
+
+.card img {
+	height: min-content;
+	width: min-content;
+	transform: none;
+	margin-bottom: 1.5rem;
+}
+
+.card a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.5rem;
+}
+
+.card a:hover {
+	color: blue;
 }
 
 h1 {
 	text-align: center;
 	margin: 1rem;
+	text-transform: capitalize;
+}
+
+p {
+	text-align: center;
+	font-size: 1.5rem;
 }
 
 .main-container {
@@ -45,7 +87,7 @@ h1 {
 
 .ingredients h2,
 h3 {
-	margin-left: 1rem;
+	margin-left: 2rem;
 }
 
 main {
