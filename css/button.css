@@ -1,0 +1,24 @@
+#my-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 3;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: opacity 0.15s;
+}
+
+#my-button:hover {
+  opacity: 0.8;
+}
+
+/* When we click the button, the opacity of button will change */
+#my-button:active {
+  opacity: 0.5;
+}
