@@ -1,0 +1,36 @@
+body {
+  background: palegoldenrod;
+  text-align: left;
+  font-family: Helvetica;
+  padding: 30px;
+}
+.start-page {
+  text-align: center;
+}
+img {
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 300px;
+  max-height: 500px;
+  border-radius: 35px;
+}
+.home:hover {
+  color: white;
+}
+h2 {
+  margin-left: 40px;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+li {
+  font-size: 16px;
+}
+div {
+  padding: 1px 5px;
+}
+.header,
+.home {
+  text-align: center;
+}
