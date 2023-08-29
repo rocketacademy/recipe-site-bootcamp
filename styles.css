@@ -1,0 +1,117 @@
+body {
+  background-color: #fcedff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap");
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.card-container-large {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+/* @media (max-width: 1500px) {
+        .card-container {
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .card {
+          color: grey;
+          background-color: #ffdbaa;
+          text-align: center;
+          width: 500px;
+
+          box-shadow: rgb(36, 36, 36) 20px 20px;
+          padding: 100px;
+          border-radius: 0px;
+        }
+      } */
+
+.card {
+  color: rgb(231, 61, 61);
+  background-color: #ffe49b;
+  text-align: center;
+  width: 200px;
+  height: 500px;
+
+  box-shadow: rgb(36, 36, 36) 20px 20px;
+  padding: 100px;
+  border-radius: 0px;
+}
+
+menu {
+  background-color: #ffc39c;
+  height: fit-content;
+}
+
+.recipe-large {
+  color: rgb(11, 15, 255);
+  background-color: #ffe49b;
+  text-align: left;
+  max-width: 1000px;
+
+  box-shadow: rgb(36, 36, 36) 20px 20px;
+  padding: 50px 100px 70px 100px;
+  border-radius: 0px;
+}
+/* 
+.large {
+  max-width: 2000px;
+} */
+
+/* Somehow adding style on the image-holder has to work in tandem with the img style as well.  */
+.image-holder {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  /* border: 5px solid white; */
+
+  margin-bottom: 50px;
+  margin-top: -20px;
+  box-shadow: white 20px 20px;
+  border-bottom-left-radius: 50px;
+}
+
+/* img {
+        border-top-left-radius: 50px; DOESNT WORK
+      } */
+
+/* removing the text decoration for links */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+
+  padding: 20px 0px 20px 0px;
+}
+h2 {
+  color: rgb(0, 68, 255);
+  padding: 30px 0px 10px;
+  text-decoration: underline;
+  font-family: "Playfair Display", serif;
+}
+
+p,
+ul,
+ol {
+  color: rgb(58, 45, 247);
+  font-family: "Poppins", sans-serif;
+}
