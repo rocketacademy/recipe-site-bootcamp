@@ -1,0 +1,65 @@
+body {
+  background-color: #ffe6e6;
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 36px;
+  color: #cc0000;
+  text-align: center;
+  margin: 20px 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 10px solid #cc0000;
+  border-radius: 20px;
+}
+
+.icon {
+  display: block;
+  margin: 0 auto;
+  max-width: 10%;
+  height: auto;
+  border: 0px solid #cc0000;
+  border-radius: 0px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #cc0000;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div {
+  padding: 20px;
+}
