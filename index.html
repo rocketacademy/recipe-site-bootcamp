@@ -2,8 +2,124 @@
 <html>
   <head>
     <title>The Best Recipes!</title>
+
+    <style>
+      body {
+        background-color: #f4eeee;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap");
+      . {
+        display: flex;
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card {
+        color: grey;
+        background-color: #ffdbaa;
+        text-align: center;
+        width: 200px;
+
+        box-shadow: rgb(36, 36, 36) 20px 20px;
+        padding: 100px;
+        border-radius: 0px;
+      }
+      .image-holder {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        /* border: 5px solid white; */
+
+        margin-bottom: 50px;
+        box-shadow: white 20px 20px;
+        border-bottom-left-radius: 50px;
+      }
+
+      /* img {
+        border-top-left-radius: 50px; DOESNT WORK
+      } */
+
+      /* removing the text decoration for links */
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
+
+      h1 {
+        text-align: center;
+        color: #606c5d;
+        padding: 20px 0px 40px 0px;
+      }
+      h2 {
+        /* color: #395332; */
+        color: black;
+        padding: 20px 0px 20px;
+        font-family: "Playfair Display", serif;
+      }
+
+      .shortText {
+        color: rgb(59, 59, 59);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
+
   <body>
     <h1>Recipes</h1>
+
+    <div class="card-container">
+      <div class="card">
+        <article>
+          <div class="image-holder">
+            <img
+              src="https://www.acouplecooks.com/wp-content/uploads/2020/07/Paella-Recipe-014.jpg"
+              style="width: 200px; overflow: hidden"
+            />
+          </div>
+          <h2>Paella</h2>
+          <p>
+            <a class="shortText" href="paella.html"
+              >Authentic Paella recipe in an hour!</a
+            >
+          </p>
+        </article>
+      </div>
+
+      <div class="card">
+        <div>
+          <img
+            src="https://www.acouplecooks.com/wp-content/uploads/2020/07/Paella-Recipe-014.jpg"
+            style="width: 200px"
+          />
+          <h2>Lu Rou Fan</h2>
+          <p>
+            <a class="shortText" href="luroufan.html">Home-made Lu Rou Fan</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <img
+            src="https://www.acouplecooks.com/wp-content/uploads/2020/07/Paella-Recipe-014.jpg"
+            style="width: 200px"
+          />
+          <h2>Laksa</h2>
+          <p>
+            <a class="shortText" href="laksa.html">Hawker style Laksa</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
