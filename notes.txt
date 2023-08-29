@@ -1,0 +1,6 @@
+Recipe site notes
+
+Put code on Ubuntu system and not mounted windows C: - it runs faster
+HTML - better to copy? is there a standard template
+Figure out how to do fractions/chinese characters in html
+&nbsp; is useful for empty cells in tables; just doing td /td can create border problems
