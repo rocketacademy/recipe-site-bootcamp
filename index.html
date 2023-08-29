@@ -2,8 +2,296 @@
 <html>
   <head>
     <title>The Best Recipes!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 20px;
+        background-color: #f2f2f2;
+      }
+
+      h2,
+      h3 {
+        margin-top: 10px;
+      }
+
+      .button-container {
+        text-align: center;
+        margin: 20px;
+      }
+
+      .category-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #337ab7;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: 0 10px;
+      }
+
+      .active {
+        background-color: #265a88;
+      }
+
+      .dropdown {
+        display: none;
+        position: relative;
+        margin: 20px;
+      }
+
+      .dropbtn {
+        background-color: red;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+      }
+
+      .dropdown.show-dropdown .dropdown-content {
+        display: block;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: #337ab7;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <h1>Recipes</h1>
+    <h1>Simple Food Ideas with 5 Ingredients (or Less!) Recipes</h1>
+
+    <div class="button-container">
+      <button
+        class="category-button active"
+        id="pastaButton"
+        onclick="showCategory('pasta')"
+      >
+        Pasta Dish
+      </button>
+      <button
+        class="category-button"
+        id="dessertButton"
+        onclick="showCategory('dessert')"
+      >
+        Dessert Dish
+      </button>
+    </div>
+
+    <div class="dropdown pasta" id="tortelliniDropdown">
+      <h2>Tortellini with Sausage and Mascarpone</h2>
+      <img
+        src="Tortellini-with-Sausage-and-Mascarpone_EXPS_5ING20MINBZ23_245880_P2_MD_09_20_2b.jpg"
+        alt="Tortellini with Sausage and Mascarpone"
+      />
+      <a
+        href="https://www.tasteofhome.com/recipes/tortellini-with-sausage-and-mascarpone/"
+        target="_blank"
+        >Recipe Link</a
+      >
+
+      <h3>Ingredients</h3>
+      <p>
+        1 package (20 oz) refrigerated cheese tortellini<br />
+        8 oz bulk Italian sausage<br />
+        1 jar (24 oz) pasta sauce with mushrooms<br />
+        1/2 cup shredded Parmesan cheese<br />
+        1 carton (8 oz) mascarpone cheese<br />
+        Crushed red pepper flakes, optional
+      </p>
+
+      <h3>Instructions</h3>
+      <p>
+        1. Prepare tortellini according to package directions.<br />
+        2. Meanwhile, in a large skillet, cook sausage over medium heat until no
+        longer pink, 6-8 minutes, breaking into crumbles; drain. Stir in pasta
+        sauce; heat through.<br />
+        3. Drain tortellini, reserving 1 cup cooking water. Add tortellini to
+        sauce with enough reserved cooking water to reach desired consistency;
+        toss to coat. Stir in Parmesan cheese; dollop with mascarpone cheese. If
+        desired, sprinkle with red pepper flakes.
+      </p>
+
+      <h3>Nutrition Facts</h3>
+      <p>
+        1 cup: 637 calories, 37g fat (17g saturated fat), 113mg cholesterol,
+        1040mg sodium, 57g carbohydrate (11g sugars, 4g fiber), 24g protein.
+      </p>
+    </div>
+
+    <div class="dropdown pasta" id="macAndCheeseDropdown">
+      <h2>One-Pot Mac and Cheese</h2>
+      <img
+        src="One-Pot-Mac-and-Cheese_EXPS_FT19_197484_F_1213_1-22.jpg"
+        alt="One-Pot Mac and Cheese"
+      />
+      <a
+        href="https://www.tasteofhome.com/recipes/one-pot-mac-and-cheese/"
+        target="_blank"
+        >Recipe Link</a
+      >
+
+      <h3>Ingredients</h3>
+      <p>
+        3-1/2 cups whole milk<br />
+        3 cups water<br />
+        1 package (16 oz) elbow macaroni<br />
+        4 oz Velveeta, cubed<br />
+        2 cups shredded sharp cheddar cheese<br />
+        1/2 teaspoon salt<br />
+        1/2 teaspoon coarsely ground pepper<br />
+      </p>
+
+      <h3>Instructions</h3>
+      <p>
+        1. In a Dutch oven, combine milk, water and macaroni; bring to a boil
+        over medium heat. Reduce heat and simmer until macaroni is tender and
+        almost all the cooking liquid has been absorbed, 12-15 minutes, stirring
+        frequently. Reduce heat to low; stir in cheeses until melted. Season
+        with salt and pepper.
+      </p>
+
+      <h3>Nutrition Facts</h3>
+      <p>
+        1 cup: 637 calories, 37g fat (17g saturated fat), 113mg cholesterol,
+        1040mg sodium, 57g carbohydrate (11g sugars, 4g fiber), 24g protein.
+      </p>
+    </div>
+
+    <div class="dropdown dessert" id="peanutButterBallDropdown">
+      <h2>Easy Peanut Butter Balls</h2>
+      <img
+        src="Easy-Peanut-Butter-Balls_EXPS_HC22_13774_P2_MD_06_01_1b.jpg"
+        alt="Easy Peanut Butter Balls"
+      />
+      <a
+        href="https://www.tasteofhome.com/recipes/easy-peanut-butter-balls/"
+        target="_blank"
+        >Recipe Link</a
+      >
+
+      <h3>Ingredients</h3>
+      <p>
+        1 cup light corn syrup<br />
+        1/2 cup sugar<br />
+        1 cup peanut butter<br />
+        1 teaspoon vanilla extract<br />
+        4 to 5 cups cornflakes<br />
+      </p>
+
+      <h3>Instructions</h3>
+      <p>
+        1. In a large saucepan, bring the corn syrup and sugar to a boil. Add
+        the peanut butter. Remove from the heat; stir in vanilla and cornflakes.
+        Drop by tablespoonfuls onto waxed paper. Store in an airtight container.
+      </p>
+
+      <h3>Nutrition Facts</h3>
+      <p>
+        1 peanut butter ball: 69 calories, 3g fat (1g saturated fat), 0
+        cholesterol, 44mg sodium, 11g carbohydrate (9g sugars, 0 fiber), 1g
+        protein.
+      </p>
+    </div>
+
+    <div class="dropdown dessert" id="cookiesDropdown">
+      <h2>Devil’s Food Cookies</h2>
+      <img
+        src="Devil-s-Food-Cookies_EXPS_HCBZ22_23444_DR_05_06_4b.jpg"
+        alt="Devil’s Food Cookies"
+      />
+      <a
+        href="https://www.tasteofhome.com/recipes/devil-s-food-cookies/"
+        target="_blank"
+        >Recipe Link</a
+      >
+
+      <h3>Ingredients</h3>
+      <p>
+        1 package devil's food cake mix (regular size)<br />
+        2 large eggs, room temperature<br />
+        2 tablespoons butter, softened<br />
+        3 tablespoons water<br />
+        1/2 cup miniature semisweet chocolate chips<br />
+      </p>
+
+      <h3>Instructions</h3>
+      <p>
+        1. Preheat oven to 350°. In a large bowl, combine cake mix, eggs, butter
+        and water (batter will be thick). Fold in chocolate chips. Drop by
+        tablespoonfuls 2 in. apart onto baking sheets coated with cooking spray.
+        Bake 10-13 minutes or until set and edges are lightly browned. Cool 2
+        minutes before removing to wire racks.
+      </p>
+
+      <h3>Nutrition Facts</h3>
+      <p>
+        1 each: 105 calories, 4g fat (2g saturated fat), 17mg cholesterol, 155mg
+        sodium, 16g carbohydrate (9g sugars, 1g fiber), 1g protein.
+      </p>
+    </div>
+
+    <script>
+      var activeCategory = "";
+
+      function toggleDropdown(dropdownId) {
+        var dropdownContent = document.getElementById(dropdownId);
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      }
+
+      function showCategory(category) {
+        var allDropdowns = document.querySelectorAll(".dropdown");
+        allDropdowns.forEach(function (dropdown) {
+          dropdown.style.display = "none";
+        });
+
+        var categoryDropdowns = document.querySelectorAll("." + category);
+        categoryDropdowns.forEach(function (dropdown) {
+          dropdown.style.display = "block";
+        });
+
+        if (activeCategory) {
+          document
+            .getElementById(activeCategory + "Button")
+            .classList.remove("active");
+        }
+        document.getElementById(category + "Button").classList.add("active");
+        activeCategory = category;
+      }
+    </script>
   </body>
 </html>
