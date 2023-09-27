@@ -37,3 +37,36 @@ paragraph p will be red as p selector applies more directly in the HTML structur
 
 3. Style Location hierarchy
 Inline styles take precedence over internal stylesheets, internal stylesheets take precedence over external stylesheets
+
+Type selector
+- selects all elements of the same type like h1, p etc.
+h1 {
+  color: maroon;
+}
+
+Universal selector
+- selects all elements of any type
+* {
+  font-family: Verdana;
+}
+
+Class selector
+.title {
+  color: teal;
+}
+
+Multiple classes
+
+html: 
+<h1 class='green bold'> ... </h1>
+
+css:
+.green {
+  color: green;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+We can add multiple classes to an HTML element’s class attribute by separating them with a space. This enables us to mix and match CSS classes to create many unique styles without writing a custom class for every style combination needed.
