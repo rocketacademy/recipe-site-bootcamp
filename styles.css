@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  background-color: orange;
+  color: black;
+}
