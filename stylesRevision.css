@@ -1,0 +1,133 @@
+/* CSS Specificity */
+/* - hierarchy that CSS uses to apply styles to HTML elements */
+/* 1. Selector hierarchy */
+p {
+  color: red;
+}
+.para-class {
+  color: green;
+}
+#para-id {
+  color: blue;
+}
+IDs take precedence over classes, classes take precedence over HTML tags
+
+/* 2. Directness hierarchy */
+/* <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: red;
+      }
+      #div-id {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div-id">
+      <p>Roses are red</p>
+    </div>
+  </body>
+</html> */
+
+paragraph p will be red as p selector applies more directly in the HTML structure than the div-id selector
+
+/* 3. Style Location hierarchy */
+/* Inline styles take precedence over internal stylesheets, internal stylesheets take precedence over external stylesheets
+
+Type selector
+- selects all elements of the same type like h1, p etc. */
+h1 {
+  color: maroon;
+}
+
+/* Universal selector */
+/* - selects all elements of any type */
+* {
+  font-family: Verdana;
+}
+
+/* Class selector */
+.title {
+  color: teal;
+}
+
+/* Multiple classes Selector */
+
+/* html:  */
+/* <h1 class='green bold'> ... </h1> */
+
+/* css: */
+.green {
+  color: green;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* We can add multiple classes to an HTML element’s class attribute by separating them with a space. This enables us to mix and match CSS classes to create many unique styles without writing a custom class for every style combination needed. */
+
+/* ID Selector */
+
+/* html:  */
+/* <h1 class='title uppercase' id="article-title">Top Vacation Spots</h1>
+
+css: */
+#article-title {
+  font-family: cursive;
+}
+
+/* Attribute Selector
+- Can be used to target HTML elements that already contain attributes
+- Elements of the same type can be targeted differently by their attribute or attribute value
+
+E.g.: */
+[href] {
+  color: magenta;
+}
+
+/* - [href] would target all elements with an href attribute and set the color to magenta
+
+Another more complex e.g.:
+html:
+<img src='/images/seasons/cold/winter.jpg'>
+<img src='/images/seasons/warm/summer.jpg'>
+
+css: */
+img[src*="winter"] {
+  height: 50px;
+}
+
+img[src*="summer"] {
+  height: 100px;
+}
+
+/* - img[src*='winter'] ruleset looks for an img element with an attribute of src that contains the string 'winter' and then sets that height of the img to 50px
+- img[src*='summer'] ruleset looks for an img element with an attribute of src that contains the string 'summer', and sets the height to 100px.
+
+Pseudo-class
+You may have observed how the appearance of certain elements can change, or be in a different state, after certain user interactions. For instance:
+
+- When you click on an <input> element, and a blue border is added showing that it is in focus.
+
+- When you click on a blue <a> link to visit to another page, but when you return the link’s text is purple.
+
+- When you’re filling out a form and the submit button is grayed out and disabled. But when all of the fields have been filled out, the button has color showing that it’s active.
+
+A pseudo-class can be attached to any selector. It is always written as a colon : followed by a name. */
+
+p:hover {
+  background-color: lime;
+}
+/* 
+In the example above, whenever the mouse hovers over a paragraph element, the paragraph will have a lime colored background */
+
+/* Classes and IDs combined */
+/* For instance, imagine a page with two headlines. One headline needs to be bold and blue, and the other needs to be bold and green. 
+ 
+ Instead of writing separate CSS rules for each headline that repeat each other’s code, it’s better to write a .bold CSS rule, a .green CSS rule, and a .blue CSS rule. 
+ 
+ Then you can give one headline the '.bold green' classes, and the other the '.bold blue' classes. */
