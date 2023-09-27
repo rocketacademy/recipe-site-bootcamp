@@ -131,3 +131,110 @@ In the example above, whenever the mouse hovers over a paragraph element, the pa
  Instead of writing separate CSS rules for each headline that repeat each other’s code, it’s better to write a .bold CSS rule, a .green CSS rule, and a .blue CSS rule. 
  
  Then you can give one headline the '.bold green' classes, and the other the '.bold blue' classes. */
+
+/* Specificity */
+/* html: 
+<h1 class= "headline" >Breaking News</h1>; */
+
+/* css:   */
+h1 {
+  color: red;
+}
+
+.headline {
+  color: firebrick;
+}
+/* In the example code above, the color of the heading would be set to firebrick, as the class selector is more specific than the type selector.  */
+
+/* Chaining */
+/* When writing CSS rules, it is possible to require an HTML element to have 2 or more CSS selectors at the same time
+
+We do this by combining multiple selectors, referred to as chaining. For example, if there was a special class for <h1> elements, the CSS would look like this: 
+*/
+h1.special {
+  color: blue;
+}
+/* The code above would select only the <h1> elements with a class of special. If a <p> element also had a class of special, the rule in the example would not style the paragraph. */
+
+/* Descendant Combinator */
+/* In addition to chaining selectors to select elements, CSS also supports selecting elements that are nested within other HTML elements, also known as descendants. For instance, consider the following HTML: */
+/* html:
+<ul class='main-list'>
+  <li> ... </li>
+  <li> ... </li>
+  <li> ... </li>
+</ul>
+ */
+
+/* We can select the nested <li> elements like this: */
+.main-list li {
+  font-weight: bold;
+}
+
+/* In the example above, .main-list selects the element with the.main-list class (the <ul> element). 
+
+The descendant <li>‘s are selected by adding li to the selector, separated by a space. 
+
+This results in .main-list li as the final selector. */
+
+.description h5 {
+  color: blueviolet;
+}
+
+/* This targets the h5 elements within a div element with the class .description */
+
+/* Chaining and Specificity */
+/* Chaining selectors increases specificity */
+
+/* E.g.: */
+p {
+  color: blue;
+}
+
+.main p {
+  color: red;
+}
+
+/* Since .main p has a class and a p type as its selector, only the <p> elements inside the .main element will appear red. 
+
+This occurs despite there being another more general rule that states <p> elements should be blue. */
+
+/* Multiple Selectors */
+/* In order to make CSS more concise, it’s possible to add CSS styles to multiple CSS selectors all at once. 
+
+This prevents writing repetitive code. */
+
+/* Bad Example (repetitive): */
+h1 {
+  font-family: Georgia;
+}
+
+.menu {
+  font-family: Georgia;
+}
+
+/* Good Example: */
+h1,
+.menu {
+  font-family: Georgia;
+}
+/* By separating the CSS selectors with a comma, both the <h1> elements and the elements with the menu class will receive the font-family: Georgia styling. */
+
+/* Recap:
+- CSS can select HTML elements by type, class, ID, and attribute.
+
+- All elements can be selected using the universal selector.
+
+- An element can have different states using the pseudo-class selector.
+
+-Multiple CSS classes can be applied to one HTML element.
+
+- Classes can be reusable, while IDs can only be used once.
+
+- IDs are more specific than classes, and classes are more specific than type. That means IDs will       override any styles from a class, and classes will override any styles from a type selector.
+
+-Multiple selectors can be chained together to select an element. This raises the specificity but can be necessary.
+
+- Nested elements can be selected by separating selectors with a space.
+
+- Multiple unrelated selectors can receive the same styles by separating the selector names with commas. */
