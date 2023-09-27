@@ -41,15 +41,15 @@ a:link {
   padding: 15px;
 }
 
+a:visited {
+  color: black;
+}
+
 a:hover {
   color: black;
   border: 3px solid black;
   background: whitesmoke;
   text-decoration: none;
-}
-
-a:visited {
-  color: black;
 }
 
 .main-page {
