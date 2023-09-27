@@ -1,0 +1,39 @@
+CSS 
+CSS Specificity
+- hierarchy that CSS uses to apply styles to HTML elements
+1. Selector hierarchy
+      p {
+        color: red;
+      }
+      .para-class {
+        color: green;
+      }
+      #para-id {
+        color: blue;
+      }
+IDs take precedence over classes, classes take precedence over HTML tags
+
+2. Directness hierarchy
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: red;
+      }
+      #div-id {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div-id">
+      <p>Roses are red</p>
+    </div>
+  </body>
+</html>
+
+paragraph p will be red as p selector applies more directly in the HTML structure than the div-id selector
+
+3. Style Location hierarchy
+Inline styles take precedence over internal stylesheets, internal stylesheets take precedence over external stylesheets
