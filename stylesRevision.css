@@ -292,3 +292,277 @@ CSS can make an element transparent with the opacity property.
 CSS can also set the background of an element to an image with the background-image property.
 
 The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override. */
+
+/* Box Model */
+/* The box model comprises the set of properties that define parts of an element that take up space on a web page. */
+
+/* The properties include:
+
+1. width and height: The width and height of the content area.
+2. padding: The amount of space between the content area and the border.
+3. border: The thickness and style of the border surrounding the content area and padding.
+4. margin: The amount of space between the border and the outside edge of the element. */
+
+/* Height and Width */
+p {
+  height: 80px;
+  width: 240px;
+}
+/* The p element's dimensions are 80px height and 240px width, which holds the contents of the box */
+
+/* Borders */
+p {
+  border: 3px solid coral;
+}
+
+/* The border above has a width of 3 pixels, a style of solid, and a color of coral */
+
+/* A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style, and color: */
+
+/* 
+
+1. width—The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: thin, medium, or thick.
+
+2. style—The design of the border. Web browsers can render any of 10 different styles. Some of these styles include: none, dotted, and solid.
+
+3. color—The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords. */
+
+/* Border Radius */
+div.container {
+  border: 3px solid blue;
+  border-radius: 5px;
+}
+/* The code in the example above will set all four corners of the border to a radius of 5 pixels (i.e. the same curvature that a circle with a radius of 5 pixels would have). */
+
+div.container {
+  height: 60px;
+  width: 60px;
+  border: 3px solid blue;
+  border-radius: 50%;
+}
+
+/* You can create a border that is a perfect circle by first creating an element with the same width and height, and then setting the radius equal to half the width of the box, which is 50%. */
+
+/* Padding */
+/* The space between the contents of a box and the borders of a box is known as padding. Padding is like the space between a picture and the frame surrounding it. In CSS, you can modify this space with the padding property. */
+
+p.content-header {
+  border: 3px solid coral;
+  padding: 10px;
+}
+/* The p element with class content-header has 10 pixels of space between the content of the paragraph (the text) and the borders, on all four sides. */
+
+/* If you want to be more specific about the amount of padding on each side of a box’s content, you can use the following properties:
+
+padding-top
+padding-right
+padding-bottom
+padding-left */
+
+p.content-header {
+  border: 3px solid fuchsia;
+  padding-bottom: 10px;
+}
+/* Only the bottom side of the paragraph's content will have a padding of 10 pixels */
+
+/* padding shorthand */
+
+/* 4 values */
+h2 {
+  border: 1px dotted red;
+  color: red;
+  line-height: 48px;
+  padding: 20px 30px 20px 30px;
+}
+/* This sets the top and bottom padding at 20 pixels and the right and left padding at 30 pixels */
+
+/* 3 values  */
+p.content-header {
+  padding: 5px 10px 20px;
+}
+/* This sets the top padding at 5 pixels, the left and right padding at 10 pixels and the bottom padding at 20 pixels */
+
+/* 2 values  */
+p.content-header {
+  padding: 5px 10px;
+}
+/* This sets the top and bottom padding at 5 pixels and the left and right padding at 10 pixels */
+
+/* Margin */
+/* Margin refers to the space directly outside of the box. The margin property is used to specify the size of this space. */
+
+p {
+  border: 1px solid aquamarine;
+  margin: 20px;
+}
+/* This places 20 pixels of space on the outside of the paragraph's box on all 4 sides. Other HTML elements cannot come within 20 pixels of the p border */
+
+/* If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:
+
+1. margin-top
+
+2. margin-right
+
+3. margin-bottom
+
+4. margin-left 
+*/
+
+p {
+  border: 3px solid DarkSlateGrey;
+  margin-right: 15px;
+}
+/* Only the right side of the paragraph's box will have a margin of 15 pixels */
+
+/* Margin Shorthand */
+/* Similar to padding shorthand, margin shorthand lets you specify all of the margin properties as values on a single line:
+
+margin-top
+margin-right
+margin-bottom
+margin-left */
+
+/* 4 values  */
+p {
+  margin: 6px 10px 5px 12px;
+}
+/* This sets the top margin at 6px, right margin at 10px, bottom margin at 5px and left margin at 12px */
+
+/* 3 values */
+p {
+  margin: 5px 12px 4px;
+}
+/* This sets the top margin at 5px, left and right margin at 12px and bottom margin at 4px */
+
+/* 2 values   */
+p {
+  margin: 20px 10px;
+}
+/* This sets the top and bottom margin at 20px and the left and right margin at 10px */
+
+/* Margin Auto */
+div.headline {
+  width: 400px;
+  margin: 0 auto;
+}
+/* margin: 0 auto will center the divs in their containing elements
+
+- The 0 sets the top and bottom margins to 0px
+
+- The auto value adjusts the left and right margin until the element is centered within its containing element 
+
+- In the example above, the width of the div is set to 400 pixels, which is less than the width of most screens. This will cause the div to center within a containing element that is greater than 400 pixels wide due to the width constraint of 400 pixels for the content of that element
+*/
+
+/* Margin Collapse */
+/* One  difference between margins and padding is that top and bottom margins, also called vertical margins, collapse, while top and bottom padding does not. */
+
+#img-one {
+  margin-right: 20px;
+}
+
+#img-two {
+  margin-left: 20px;
+}
+/* The right margin of #img-one and left margin of #img-two will add up to make a total margin of 40 pixels between each other */
+
+/* Unlike horizontal margins, vertical margins do not add. Instead, the larger of the two vertical margins sets the distance between adjacent elements. */
+#img-one {
+  margin-bottom: 30px;
+}
+
+#img-two {
+  margin-top: 20px;
+}
+/* The margin collapses for the top margin of #img-two and the margin between #img-one and #img-two is 30px. */
+
+/* Minimum and Maximum Height and Width (for when browser sizes expand or collapses) */
+/* You can use min-width and max-width to limit how narrow or wide and element's box can be sized to
+
+min-width—this property ensures a minimum width of an element’s box.
+
+max-width—this property ensures a maximum width of an element’s box. */
+
+p {
+  min-width: 300px;
+  max-width: 600px;
+}
+/* The width of p elements will not shrink below 300 pixels and the width will not exceed 600 pixels */
+
+/* You can also limit the minimum and maximum height of an element:
+
+min-height — this property ensures a minimum height for an element’s box.
+max-height — this property ensures a maximum height of an element’s box. */
+
+p {
+  min-height: 150px;
+  max-height: 300px;
+}
+/* The height of p elements will not shrink below 150px and the height will also not exceed 300px */
+
+/* Overflow */
+/* How can we ensure that we can view all of an element that is larger than its parent’s containing area? (i.e., when the browser window is smaller than the total dimensions of the element)
+
+The overflow property controls what happens to content that spills, or overflows, outside its box. The most commonly used values are:
+
+- hidden — when set to this value, any content that overflows will be hidden from view.
+
+- scroll — when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.
+
+- visible — when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value. */
+
+/* Resetting Defaults */
+/* All major web browsers have a default stylesheet they use in the absence of an external stylesheet. These default stylesheets are known as user agent stylesheets. In this case, the term user agent is a technical term for the browser. */
+
+/* User agent stylesheets often have default CSS rules that set default values for padding and margin. This affects how the browser displays HTML elements, which can make it difficult for a developer to design or style a web page. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* This resets the default margin and padding values of all HTML elements  */
+
+/* Visibility */
+/* Elements can be hidden from view with the visibility property.
+
+The visibility property can be set to one of the following values:
+
+- hidden — hides an element.
+
+- visible — displays an element.
+
+- collapse — collapses an element. */
+
+/* html:  
+<ul>
+  <li>Explore</li>
+  <li>Connect</li>
+  <li class="future">Donate</li>
+</ul> */
+
+.future {
+  visibility: hidden;
+}
+/* The list item with the class of future will be hidden from view in the browser */
+
+/* SUMMARY
+The box model comprises a set of properties used to create space around and between HTML elements.
+
+The height and width of a content area can be set in pixels or percentages.
+
+
+Borders surround the content area and padding of an element. The color, style, and thickness of a border can be set with CSS properties.
+
+Padding is the space between the content area and the border. It can be set in pixels or percent.
+
+Margin is the amount of spacing outside of an element’s border.
+
+Horizontal margins add, so the total space between the borders of adjacent elements is equal to the sum of the right margin of one element and the left margin of the adjacent element.
+
+Vertical margins collapse, so the space between vertically adjacent elements is equal to the larger margin.
+
+margin: 0 auto horizontally centers an element inside of its parent content area, if it has a width.
+
+The overflow property can be set to display, hidden, or scroll, and dictates how HTML will render content that overflows its parent’s content area.
+
+The visibility property can hide or show elements. */
