@@ -1,3 +1,4 @@
+// ALWAYS MAKE NOTES DURING INTERVIEW USING THE // COMMENTS!!
 var fizzBuzz = function (n) {
   let array = [];
 
@@ -18,7 +19,7 @@ var fizzBuzz = function (n) {
 var test = fizzBuzz(15);
 console.log(test);
 
-// Minimum and Maximum Number in an Array
+// Minimum and Maximum Number in an Array of 5 elements using 4 out of the 5 elements
 
 function minMaxSum(arr) {
   // initialising minSum and maxSum to extreme values to ensure the for loop updates them based on the arr elements
@@ -110,3 +111,5 @@ const test4 = timeConversion("12:05:45AM");
 
 const test5 = timeConversion("12:00:00AM");
 const test6 = timeConversion("12:45:54PM");
+
+// Running Sum of 1D Array

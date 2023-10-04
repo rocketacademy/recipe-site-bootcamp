@@ -608,3 +608,208 @@ The default value of the box-sizing property is content-box.
 The value for the new box model is border-box.
 
 The border-box model is not affected by border thickness or padding. */
+
+/*****************************************/
+/* Layout */
+/*
+1. CSS layout is about organising HTML elements into nested boxes and determining their positions
+2. CSS box model determines the size of each element on screen
+3. CSS display property controls the manner in which elements appear on screen, e.g. in horizontal or vertical order
+4. CSS position property allows us to position elements outside of the normal document flow, e.g. a fixed navbar or chat window
+5. Flexbox allows simple and robust layout of collections of HTML elements
+*/
+
+/*3 Common Ways to specify Box Dimensions
+1. Pixel Count
+2. Percent of parent container
+3. Percent of viewport (window)
+*/
+
+/* Pixel Count */
+p {
+  width: 100px;
+  height: 100px;
+}
+/* This is the specific, fixed pixels for the content width and height and only works for block display elements
+Not recommended as it is difficult to create responsive layouts */
+
+/* Percent of parent container */
+p {
+  width: 50%;
+  height: 100px;
+}
+/* Percentage is relative to parent container and allows for responsive sizing
+Does not work unless parent has fixed size */
+
+/* Percent of viewport */
+p {
+  width: 100vw;
+  height: 100vh;
+}
+/* Viewport sizing allows for most responsive sizing based on screen size
+Needs to be coordinated with other elements on screen since sizing is not relative to other elements */
+
+/* Recap: box-sizing: border-box/content-box */
+
+/* content-box */
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+}
+
+/* div2 will be bigger than div1! This is because content-box does not include the padding as part of the width and height (padding is extra 50px!) */
+
+/* border-box */
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+/* both div1 and div2 are the same size now! In div2, padding and border are included in the width and height! */
+
+/********************************/
+/* CSS display Property (See CSS-display-property.png)*/
+/*
+1. display: block (full screen width)
+2. display: inline (width of element)
+3. display: inline-block (inline elements with block properties -> spacing on all sides)
+*/
+
+/* Centering Elements on screen */
+.main {
+  margin: 0 auto; /* 0 top and bottom margin, auto left and right margin */
+}
+
+/* Constraining Element Width */
+
+/* Fixed Width Layout */
+.main {
+  width: 600px; /* 600px is reasonable default width of centre column */
+  margin: 0 auto; /* 0 top and bottom margin, auto left and right margin */
+}
+/* makes the width a fixed size -> may look poor on smaller screens*/
+
+/* Percent Width Layout */
+.main {
+  width: 80%;
+  margin: 0 auto; /* 0 top and bottom margin, auto left and right margin */
+}
+/* fixes width to a percentage of screen width -> may look different across mobile and desktop */
+
+/* Max Width Layout (Most recommended)*/
+.main {
+  max-width: 600px; /* be 100% width, until 600px */
+  margin: 0 auto; /* 0 top and bottom margin, auto left and right margin */
+}
+/* width here is 10%% of screen size until the screen is greater than 600px 
+helps to maximise screen real estate on mobile and not make it too wide on desktop
+*/
+
+/*********************************/
+/* CSS position property */
+/*
+- allows us to position HTML elements outside normal 'flow' of HTML document
+*/
+
+.nav {
+  position: fixed;
+}
+/* this fixes the navbar to the top of the screen even when we scroll down */
+
+.counter {
+  position: absolute;
+}
+/* this fixes a counter to the top right of a notification bell */
+
+/* Position Offset Properties */
+p {
+  top: 300px; /* Offset p elements by 300px from the top of where they would be */
+}
+
+/* THE 5 TYPES OF POSITION PROPERTY VALUES */
+
+/* Static (Default) */
+.static-box {
+  /* Default positioning (static) */
+}
+
+/* Relative */
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+/* Elements with position: relative are positioned relative to their normal position
+You can offset properties (top, bottom etc.) to adjust their positions */
+
+/* Absolute */
+.relative-container {
+  position: relative;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* Elements with position: absolute are positioned relative to their nearest positioned ancestor
+In this example, .absolute-box is positioned relative to .relative-container */
+
+/* Fixed */
+.fixed-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/* Elements with position: fixed; are positioned relative to the viewport. They stay in the same position even when you scroll the page */
+
+/******************/
+/* z-index */
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+/* the img element will be placed BEHIND any html elements like a p or h element because it has a z-index of -1
+A z-index of 1 means the img will be placed in front of the html element */
+
+/**********************************************/
+/* Flexbox */
+/* https://flexboxfroggy.com/ */
+/* We'll start with container properties. A flexbox container has a main axis and a cross axis.
+
+1. justify-content
+2. align-items
+flex-direction
+
+justify-content positions a container's items along the main axis and accepts the following values:
+
+flex-start: group items at the start of a container's main axis
+
+flex-end: group items at the end of the main axis
+
+center: group items in the center of the main axis
+
+space-between: evenly distribute items along the main axis such that the first item aligns at the start and the final item aligns at the end
+
+space-around: evenly distribute items along the main axis such that all items have equal space around them
+Try justify-content: center; for example, to move the container's towers to the center of the main axis. */

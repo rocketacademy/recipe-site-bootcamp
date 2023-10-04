@@ -75,3 +75,10 @@ console.log(c); // Now returns [1, 2, 3, 4] as the memory address of c is passed
 
  * No Browser-Specific Features: Node.js does not support browser-specific features like window or document objects. Code that relies on these browser-specific features will not work in Node.js.
  */
+
+// Rest vs Spread operator
+
+// Spread Operator (array example)
+const arr1 = [10, 9, 8];
+const arr2 = [...arr1, 7, 6];
+console.log(arr2);
