@@ -1,0 +1,815 @@
+/* CSS Specificity */
+/* - hierarchy that CSS uses to apply styles to HTML elements */
+/* 1. Selector hierarchy */
+p {
+  color: red;
+}
+.para-class {
+  color: green;
+}
+#para-id {
+  color: blue;
+}
+IDs take precedence over classes, classes take precedence over HTML tags
+
+/* 2. Directness hierarchy */
+/* <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: red;
+      }
+      #div-id {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div-id">
+      <p>Roses are red</p>
+    </div>
+  </body>
+</html> */
+
+paragraph p will be red as p selector applies more directly in the HTML structure than the div-id selector
+
+/* 3. Style Location hierarchy */
+/* Inline styles take precedence over internal stylesheets, internal stylesheets take precedence over external stylesheets
+
+Type selector
+- selects all elements of the same type like h1, p etc. */
+h1 {
+  color: maroon;
+}
+
+/* Universal selector */
+/* - selects all elements of any type */
+* {
+  font-family: Verdana;
+}
+
+/* Class selector */
+.title {
+  color: teal;
+}
+
+/* Multiple classes Selector */
+
+/* html:  */
+/* <h1 class='green bold'> ... </h1> */
+
+/* css: */
+.green {
+  color: green;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* We can add multiple classes to an HTML element’s class attribute by separating them with a space. This enables us to mix and match CSS classes to create many unique styles without writing a custom class for every style combination needed. */
+
+/* ID Selector */
+
+/* html:  */
+/* <h1 class='title uppercase' id="article-title">Top Vacation Spots</h1>
+
+css: */
+#article-title {
+  font-family: cursive;
+}
+
+/* Attribute Selector
+- Can be used to target HTML elements that already contain attributes
+- Elements of the same type can be targeted differently by their attribute or attribute value
+
+E.g.: */
+[href] {
+  color: magenta;
+}
+
+/* - [href] would target all elements with an href attribute and set the color to magenta
+
+Another more complex e.g.:
+html:
+<img src='/images/seasons/cold/winter.jpg'>
+<img src='/images/seasons/warm/summer.jpg'>
+
+css: */
+img[src*="winter"] {
+  height: 50px;
+}
+
+img[src*="summer"] {
+  height: 100px;
+}
+
+/* - img[src*='winter'] ruleset looks for an img element with an attribute of src that contains the string 'winter' and then sets that height of the img to 50px
+- img[src*='summer'] ruleset looks for an img element with an attribute of src that contains the string 'summer', and sets the height to 100px.
+
+Pseudo-class
+You may have observed how the appearance of certain elements can change, or be in a different state, after certain user interactions. For instance:
+
+- When you click on an <input> element, and a blue border is added showing that it is in focus.
+
+- When you click on a blue <a> link to visit to another page, but when you return the link’s text is purple.
+
+- When you’re filling out a form and the submit button is grayed out and disabled. But when all of the fields have been filled out, the button has color showing that it’s active.
+
+A pseudo-class can be attached to any selector. It is always written as a colon : followed by a name. */
+
+p:hover {
+  background-color: lime;
+}
+/* 
+In the example above, whenever the mouse hovers over a paragraph element, the paragraph will have a lime colored background */
+
+/* Classes and IDs combined */
+/* For instance, imagine a page with two headlines. One headline needs to be bold and blue, and the other needs to be bold and green. 
+ 
+ Instead of writing separate CSS rules for each headline that repeat each other’s code, it’s better to write a .bold CSS rule, a .green CSS rule, and a .blue CSS rule. 
+ 
+ Then you can give one headline the '.bold green' classes, and the other the '.bold blue' classes. */
+
+/* Specificity */
+/* html: 
+<h1 class= "headline" >Breaking News</h1>; */
+
+/* css:   */
+h1 {
+  color: red;
+}
+
+.headline {
+  color: firebrick;
+}
+/* In the example code above, the color of the heading would be set to firebrick, as the class selector is more specific than the type selector.  */
+
+/* Chaining */
+/* When writing CSS rules, it is possible to require an HTML element to have 2 or more CSS selectors at the same time
+
+We do this by combining multiple selectors, referred to as chaining. For example, if there was a special class for <h1> elements, the CSS would look like this: 
+*/
+h1.special {
+  color: blue;
+}
+/* The code above would select only the <h1> elements with a class of special. If a <p> element also had a class of special, the rule in the example would not style the paragraph. */
+
+/* Descendant Combinator */
+/* In addition to chaining selectors to select elements, CSS also supports selecting elements that are nested within other HTML elements, also known as descendants. For instance, consider the following HTML: */
+/* html:
+<ul class='main-list'>
+  <li> ... </li>
+  <li> ... </li>
+  <li> ... </li>
+</ul>
+ */
+
+/* We can select the nested <li> elements like this: */
+.main-list li {
+  font-weight: bold;
+}
+
+/* In the example above, .main-list selects the element with the.main-list class (the <ul> element). 
+
+The descendant <li>‘s are selected by adding li to the selector, separated by a space. 
+
+This results in .main-list li as the final selector. */
+
+.description h5 {
+  color: blueviolet;
+}
+
+/* This targets the h5 elements within a div element with the class .description */
+
+/* Chaining and Specificity */
+/* Chaining selectors increases specificity */
+
+/* E.g.: */
+p {
+  color: blue;
+}
+
+.main p {
+  color: red;
+}
+
+/* Since .main p has a class and a p type as its selector, only the <p> elements inside the .main element will appear red. 
+
+This occurs despite there being another more general rule that states <p> elements should be blue. */
+
+/* Multiple Selectors */
+/* In order to make CSS more concise, it’s possible to add CSS styles to multiple CSS selectors all at once. 
+
+This prevents writing repetitive code. */
+
+/* Bad Example (repetitive): */
+h1 {
+  font-family: Georgia;
+}
+
+.menu {
+  font-family: Georgia;
+}
+
+/* Good Example: */
+h1,
+.menu {
+  font-family: Georgia;
+}
+/* By separating the CSS selectors with a comma, both the <h1> elements and the elements with the menu class will receive the font-family: Georgia styling. */
+
+/* Recap:
+- CSS can select HTML elements by type, class, ID, and attribute.
+
+- All elements can be selected using the universal selector.
+
+- An element can have different states using the pseudo-class selector.
+
+-Multiple CSS classes can be applied to one HTML element.
+
+- Classes can be reusable, while IDs can only be used once.
+
+- IDs are more specific than classes, and classes are more specific than type. That means IDs will       override any styles from a class, and classes will override any styles from a type selector.
+
+-Multiple selectors can be chained together to select an element. This raises the specificity but can be necessary.
+
+- Nested elements can be selected by separating selectors with a space.
+
+- Multiple unrelated selectors can receive the same styles by separating the selector names with commas. */
+
+/* Opacity */
+/* Opacity is the measure of how transparent an element is. It’s measured from 0 to 1, with 1 representing 100%, or fully visible and opaque, and 0 representing 0%, or fully invisible.
+
+Opacity can be used to make elements fade into others for a nice overlay effect. To adjust the opacity of an element, the syntax looks like this: */
+
+.overlay {
+  opacity: 0.5;
+}
+
+/* The .overlay element would only be 50% visible, letting whatevr is positioned behind it show through */
+
+/* Background Image */
+.main-banner {
+  background-image: url("https://www.example.com/image.jpg");
+}
+
+/* This makes the background of the element with the main-banner class the image in the url */
+
+/* !important */
+/* !important can be applied to specific declarations, instead of full rules. 
+
+It will override any style no matter how specific it is. 
+
+As a result, it should almost never be used. Once !important is used, it is very hard to override. */
+
+p {
+  color: blue !important;
+  /* Will apply blue instead of red! */
+}
+
+.main p {
+  color: red;
+}
+/* Since !important is used on the p selector’s color attribute, all p elements will appear blue, even though there is a more specific .main p selector that sets the color attribute to red. */
+
+/* One justification for using !important is when working with multiple stylesheets. For example, if we are using the Bootstrap CSS framework and want to override the styles for one specific HTML element, we can use the !important property. */
+
+/* Summary of Visual Rules
+The font-family property defines the typeface of an element.
+
+font-size controls the size of text displayed.
+
+font-weight defines how thin or thick text is displayed.
+
+The text-align property places text in the left, right, or center of its parent container.
+
+Text can have two different color attributes: color and background-color. color defines the color of the text, while background-color defines the color behind the text.
+
+CSS can make an element transparent with the opacity property.
+
+CSS can also set the background of an element to an image with the background-image property.
+
+The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override. */
+
+/* Box Model */
+/* The box model comprises the set of properties that define parts of an element that take up space on a web page. */
+
+/* The properties include:
+
+1. width and height: The width and height of the content area.
+2. padding: The amount of space between the content area and the border.
+3. border: The thickness and style of the border surrounding the content area and padding.
+4. margin: The amount of space between the border and the outside edge of the element. */
+
+/* Height and Width */
+p {
+  height: 80px;
+  width: 240px;
+}
+/* The p element's dimensions are 80px height and 240px width, which holds the contents of the box */
+
+/* Borders */
+p {
+  border: 3px solid coral;
+}
+
+/* The border above has a width of 3 pixels, a style of solid, and a color of coral */
+
+/* A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style, and color: */
+
+/* 
+
+1. width—The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: thin, medium, or thick.
+
+2. style—The design of the border. Web browsers can render any of 10 different styles. Some of these styles include: none, dotted, and solid.
+
+3. color—The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords. */
+
+/* Border Radius */
+div.container {
+  border: 3px solid blue;
+  border-radius: 5px;
+}
+/* The code in the example above will set all four corners of the border to a radius of 5 pixels (i.e. the same curvature that a circle with a radius of 5 pixels would have). */
+
+div.container {
+  height: 60px;
+  width: 60px;
+  border: 3px solid blue;
+  border-radius: 50%;
+}
+
+/* You can create a border that is a perfect circle by first creating an element with the same width and height, and then setting the radius equal to half the width of the box, which is 50%. */
+
+/* Padding */
+/* The space between the contents of a box and the borders of a box is known as padding. Padding is like the space between a picture and the frame surrounding it. In CSS, you can modify this space with the padding property. */
+
+p.content-header {
+  border: 3px solid coral;
+  padding: 10px;
+}
+/* The p element with class content-header has 10 pixels of space between the content of the paragraph (the text) and the borders, on all four sides. */
+
+/* If you want to be more specific about the amount of padding on each side of a box’s content, you can use the following properties:
+
+padding-top
+padding-right
+padding-bottom
+padding-left */
+
+p.content-header {
+  border: 3px solid fuchsia;
+  padding-bottom: 10px;
+}
+/* Only the bottom side of the paragraph's content will have a padding of 10 pixels */
+
+/* padding shorthand */
+
+/* 4 values */
+h2 {
+  border: 1px dotted red;
+  color: red;
+  line-height: 48px;
+  padding: 20px 30px 20px 30px;
+}
+/* This sets the top and bottom padding at 20 pixels and the right and left padding at 30 pixels */
+
+/* 3 values  */
+p.content-header {
+  padding: 5px 10px 20px;
+}
+/* This sets the top padding at 5 pixels, the left and right padding at 10 pixels and the bottom padding at 20 pixels */
+
+/* 2 values  */
+p.content-header {
+  padding: 5px 10px;
+}
+/* This sets the top and bottom padding at 5 pixels and the left and right padding at 10 pixels */
+
+/* Margin */
+/* Margin refers to the space directly outside of the box. The margin property is used to specify the size of this space. */
+
+p {
+  border: 1px solid aquamarine;
+  margin: 20px;
+}
+/* This places 20 pixels of space on the outside of the paragraph's box on all 4 sides. Other HTML elements cannot come within 20 pixels of the p border */
+
+/* If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:
+
+1. margin-top
+
+2. margin-right
+
+3. margin-bottom
+
+4. margin-left 
+*/
+
+p {
+  border: 3px solid DarkSlateGrey;
+  margin-right: 15px;
+}
+/* Only the right side of the paragraph's box will have a margin of 15 pixels */
+
+/* Margin Shorthand */
+/* Similar to padding shorthand, margin shorthand lets you specify all of the margin properties as values on a single line:
+
+margin-top
+margin-right
+margin-bottom
+margin-left */
+
+/* 4 values  */
+p {
+  margin: 6px 10px 5px 12px;
+}
+/* This sets the top margin at 6px, right margin at 10px, bottom margin at 5px and left margin at 12px */
+
+/* 3 values */
+p {
+  margin: 5px 12px 4px;
+}
+/* This sets the top margin at 5px, left and right margin at 12px and bottom margin at 4px */
+
+/* 2 values   */
+p {
+  margin: 20px 10px;
+}
+/* This sets the top and bottom margin at 20px and the left and right margin at 10px */
+
+/* Margin Auto */
+div.headline {
+  width: 400px;
+  margin: 0 auto;
+}
+/* margin: 0 auto will center the divs in their containing elements
+
+- The 0 sets the top and bottom margins to 0px
+
+- The auto value adjusts the left and right margin until the element is centered within its containing element 
+
+- In the example above, the width of the div is set to 400 pixels, which is less than the width of most screens. This will cause the div to center within a containing element that is greater than 400 pixels wide due to the width constraint of 400 pixels for the content of that element
+*/
+
+/* Margin Collapse */
+/* One  difference between margins and padding is that top and bottom margins, also called vertical margins, collapse, while top and bottom padding does not. */
+
+#img-one {
+  margin-right: 20px;
+}
+
+#img-two {
+  margin-left: 20px;
+}
+/* The right margin of #img-one and left margin of #img-two will add up to make a total margin of 40 pixels between each other */
+
+/* Unlike horizontal margins, vertical margins do not add. Instead, the larger of the two vertical margins sets the distance between adjacent elements. */
+#img-one {
+  margin-bottom: 30px;
+}
+
+#img-two {
+  margin-top: 20px;
+}
+/* The margin collapses for the top margin of #img-two and the margin between #img-one and #img-two is 30px. */
+
+/* Minimum and Maximum Height and Width (for when browser sizes expand or collapses) */
+/* You can use min-width and max-width to limit how narrow or wide and element's box can be sized to
+
+min-width—this property ensures a minimum width of an element’s box.
+
+max-width—this property ensures a maximum width of an element’s box. */
+
+p {
+  min-width: 300px;
+  max-width: 600px;
+}
+/* The width of p elements will not shrink below 300 pixels and the width will not exceed 600 pixels */
+
+/* You can also limit the minimum and maximum height of an element:
+
+min-height — this property ensures a minimum height for an element’s box.
+max-height — this property ensures a maximum height of an element’s box. */
+
+p {
+  min-height: 150px;
+  max-height: 300px;
+}
+/* The height of p elements will not shrink below 150px and the height will also not exceed 300px */
+
+/* Overflow */
+/* How can we ensure that we can view all of an element that is larger than its parent’s containing area? (i.e., when the browser window is smaller than the total dimensions of the element)
+
+The overflow property controls what happens to content that spills, or overflows, outside its box. The most commonly used values are:
+
+- hidden — when set to this value, any content that overflows will be hidden from view.
+
+- scroll — when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.
+
+- visible — when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value. */
+
+/* Resetting Defaults */
+/* All major web browsers have a default stylesheet they use in the absence of an external stylesheet. These default stylesheets are known as user agent stylesheets. In this case, the term user agent is a technical term for the browser. */
+
+/* User agent stylesheets often have default CSS rules that set default values for padding and margin. This affects how the browser displays HTML elements, which can make it difficult for a developer to design or style a web page. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* This resets the default margin and padding values of all HTML elements  */
+
+/* Visibility */
+/* Elements can be hidden from view with the visibility property.
+
+The visibility property can be set to one of the following values:
+
+- hidden — hides an element.
+
+- visible — displays an element.
+
+- collapse — collapses an element. */
+
+/* html:  
+<ul>
+  <li>Explore</li>
+  <li>Connect</li>
+  <li class="future">Donate</li>
+</ul> */
+
+.future {
+  visibility: hidden;
+}
+/* The list item with the class of future will be hidden from view in the browser */
+
+/* SUMMARY
+The box model comprises a set of properties used to create space around and between HTML elements. Everything on a website is a box -> every HTML elements ranging froom div to li to anchor tages 
+
+Think of designing HTML elements in terms of boxes and layouts
+
+The height and width of a content area can be set in pixels or percentages.
+
+
+Borders surround the content area and padding of an element. The color, style, and thickness of a border can be set with CSS properties.
+
+Padding is the space between the content area and the border. It can be set in pixels or percent.
+
+Margin is the amount of spacing outside of an element’s border.
+
+Horizontal margins add, so the total space between the borders of adjacent elements is equal to the sum of the right margin of one element and the left margin of the adjacent element.
+
+Vertical margins collapse, so the space between vertically adjacent elements is equal to the larger margin.
+
+margin: 0 auto horizontally centers an element inside of its parent content area, if it has a width.
+
+The overflow property can be set to display, hidden, or scroll, and dictates how HTML will render content that overflows its parent’s content area.
+
+The visibility property can hide or show elements. */
+
+/* Why change the Box Model? */
+
+/* Changing the box model in CSS is a common practice when you want to have more control over the sizing and layout of elements on a web page. 
+
+The default box model in CSS, known as the "content-box" model, can sometimes lead to unexpected results when you're working with padding and borders. */
+
+.content-box {
+  width: 200px;
+  padding: 20px;
+  border: 10px solid #3498db;
+  background-color: #f1c40f;
+  margin: 20px;
+  text-align: center;
+  float: left;
+}
+
+/* Using "border-box" box model */
+.border-box {
+  width: 200px;
+  padding: 20px;
+  border: 10px solid #e74c3c;
+  background-color: #27ae60;
+  margin: 20px;
+  text-align: center;
+  float: left;
+  box-sizing: border-box; /* Applying "border-box" model */
+}
+/* .content-box is wider because the padding and border are added to the specified width of 200px */
+/* .border-box is narrower as the specified width includes both the padding and border */
+
+/* In the default box model, box dimensions are affected by border thickness and padding.
+
+The box-sizing property controls the box model used by the browser.
+
+The default value of the box-sizing property is content-box.
+
+The value for the new box model is border-box.
+
+The border-box model is not affected by border thickness or padding. */
+
+/*****************************************/
+/* Layout */
+/*
+1. CSS layout is about organising HTML elements into nested boxes and determining their positions
+2. CSS box model determines the size of each element on screen
+3. CSS display property controls the manner in which elements appear on screen, e.g. in horizontal or vertical order
+4. CSS position property allows us to position elements outside of the normal document flow, e.g. a fixed navbar or chat window
+5. Flexbox allows simple and robust layout of collections of HTML elements
+*/
+
+/*3 Common Ways to specify Box Dimensions
+1. Pixel Count
+2. Percent of parent container
+3. Percent of viewport (window)
+*/
+
+/* Pixel Count */
+p {
+  width: 100px;
+  height: 100px;
+}
+/* This is the specific, fixed pixels for the content width and height and only works for block display elements
+Not recommended as it is difficult to create responsive layouts */
+
+/* Percent of parent container */
+p {
+  width: 50%;
+  height: 100px;
+}
+/* Percentage is relative to parent container and allows for responsive sizing
+Does not work unless parent has fixed size */
+
+/* Percent of viewport */
+p {
+  width: 100vw;
+  height: 100vh;
+}
+/* Viewport sizing allows for most responsive sizing based on screen size
+Needs to be coordinated with other elements on screen since sizing is not relative to other elements */
+
+/* Recap: box-sizing: border-box/content-box */
+
+/* content-box */
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+}
+
+/* div2 will be bigger than div1! This is because content-box does not include the padding as part of the width and height (padding is extra 50px!) */
+
+/* border-box */
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+/* both div1 and div2 are the same size now! In div2, padding and border are included in the width and height! */
+
+/********************************/
+/* CSS display Property (See CSS-display-property.png)*/
+/*
+1. display: block (full screen width)
+2. display: inline (width of element)
+3. display: inline-block (inline elements with block properties -> spacing on all sides)
+*/
+
+/* Centering Elements on screen */
+.main {
+  margin: 0 auto; /* 0 top and bottom margin, auto left and right margin */
+}
+
+/* Constraining Element Width */
+
+/* Fixed Width Layout */
+.main {
+  width: 600px; /* 600px is reasonable default width of centre column */
+  margin: 0 auto; /* 0 top and bottom margin, auto left and right margin */
+}
+/* makes the width a fixed size -> may look poor on smaller screens*/
+
+/* Percent Width Layout */
+.main {
+  width: 80%;
+  margin: 0 auto; /* 0 top and bottom margin, auto left and right margin */
+}
+/* fixes width to a percentage of screen width -> may look different across mobile and desktop */
+
+/* Max Width Layout (Most recommended)*/
+.main {
+  max-width: 600px; /* be 100% width, until 600px */
+  margin: 0 auto; /* 0 top and bottom margin, auto left and right margin */
+}
+/* width here is 10%% of screen size until the screen is greater than 600px 
+helps to maximise screen real estate on mobile and not make it too wide on desktop
+*/
+
+/*********************************/
+/* CSS position property */
+/*
+- allows us to position HTML elements outside normal 'flow' of HTML document
+*/
+
+.nav {
+  position: fixed;
+}
+/* this fixes the navbar to the top of the screen even when we scroll down */
+
+.counter {
+  position: absolute;
+}
+/* this fixes a counter to the top right of a notification bell */
+
+/* Position Offset Properties */
+p {
+  top: 300px; /* Offset p elements by 300px from the top of where they would be */
+}
+
+/* THE 5 TYPES OF POSITION PROPERTY VALUES */
+
+/* Static (Default) */
+.static-box {
+  /* Default positioning (static) */
+}
+
+/* Relative */
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+/* Elements with position: relative are positioned relative to their normal position
+You can offset properties (top, bottom etc.) to adjust their positions */
+
+/* Absolute */
+.relative-container {
+  position: relative;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* Elements with position: absolute are positioned relative to their nearest positioned ancestor
+In this example, .absolute-box is positioned relative to .relative-container */
+
+/* Fixed */
+.fixed-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/* Elements with position: fixed; are positioned relative to the viewport. They stay in the same position even when you scroll the page */
+
+/******************/
+/* z-index */
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+/* the img element will be placed BEHIND any html elements like a p or h element because it has a z-index of -1
+A z-index of 1 means the img will be placed in front of the html element */
+
+/**********************************************/
+/* Flexbox */
+/* https://flexboxfroggy.com/ */
+/* We'll start with container properties. A flexbox container has a main axis and a cross axis.
+
+1. justify-content
+2. align-items
+flex-direction
+
+justify-content positions a container's items along the main axis and accepts the following values:
+
+flex-start: group items at the start of a container's main axis
+
+flex-end: group items at the end of the main axis
+
+center: group items in the center of the main axis
+
+space-between: evenly distribute items along the main axis such that the first item aligns at the start and the final item aligns at the end
+
+space-around: evenly distribute items along the main axis such that all items have equal space around them
+Try justify-content: center; for example, to move the container's towers to the center of the main axis. */
