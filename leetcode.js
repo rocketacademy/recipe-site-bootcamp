@@ -113,3 +113,56 @@ const test5 = timeConversion("12:00:00AM");
 const test6 = timeConversion("12:45:54PM");
 
 // Running Sum of 1D Array
+var runningSum = function (nums) {
+  let sum = 0;
+  let array = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+    array.push(sum);
+  }
+
+  return array;
+};
+
+const runningSumTest = runningSum([1, 2, 3]); // Output should be [1, 3, 6]
+
+console.log(runningSumTest);
+
+// Richest Customer Wealth
+var maximumWealth = function (accounts) {
+  // basically adding the sum of elements in each nested array and comparing which one is the highest
+
+  const array = [];
+  for (let i = 0; i < accounts.length; i++) {
+    const individualAccount = accounts[i];
+
+    let sum = 0; // Calculate total wealth of each individual account
+
+    for (let j = 0; j < individualAccount.length; j++) {
+      sum += individualAccount[j];
+    }
+    array.push(sum); // Adding each individual account's total wealth into the array
+  }
+
+  return Math.max(...array); // Finds and returns the maximum value in the array. Spread takes out the array elements and separates them by commas
+};
+
+const maximumWealthTest = maximumWealth([
+  [1, 5],
+  [7, 3],
+  [3, 5],
+]);
+console.log(maximumWealthTest); // Output should be 10
+
+const maximumWealthTest1 = maximumWealth([
+  [2, 8, 7],
+  [7, 1, 3],
+  [1, 9, 5],
+]);
+console.log(maximumWealthTest1); // Output should be 17
+
+// Jewels and Stones
+var numJewelsInStones = function (jewels, stones) {
+  let output = 0;
+};
