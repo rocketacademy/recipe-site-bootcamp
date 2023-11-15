@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+HK&family=Noto+Sans+JP&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap");
+:root {
+  font-family: "Roboto Flex", "Noto Sans HK", "Noto Sans JP", "Noto Color Emoji",
+    sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Roboto Flex", "Noto Sans HK", "Noto Sans JP",
+      "Noto Color Emoji", sans-serif;
+  }
+}
+body {
+  font-size: 16px;
+  background-color: #333333;
+  color: #cccccc;
+}
+.header {
+  font-size: 48px;
+  text-align: center;
+  margin: 3rem;
+}
+.subheader {
+  margin: 3rem 0rem 0rem 5rem;
+  padding: 1rem 0rem;
+}
+.ingredient * {
+  margin: 0rem 3rem;
+  padding: 0.5rem;
+}
+.instruction * {
+  margin: 0rem 3rem;
+  padding: 0.5em;
+}
+.subingredient {
+  font-size: 18px;
+  margin: 0rem 5rem;
+}
+a {
+  color: #cccccc;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
