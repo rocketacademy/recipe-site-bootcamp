@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=Noto+Sans+JP&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap");
+:root {
+  font-family: "Roboto Flex", "Noto Sans HK", "Noto Sans JP", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Roboto Flex", "Noto Sans HK", "Noto Sans JP", sans-serif;
+  }
+}
+.header {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#instruction * {
+  font-size: 16px;
+  margin: 0rem 3rem;
+  padding: 0.5em;
+}
