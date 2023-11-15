@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=Noto+Sans+JP&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+HK&family=Noto+Sans+JP&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap");
 :root {
-  font-family: "Roboto Flex", "Noto Sans HK", "Noto Sans JP", sans-serif;
+  font-family: "Roboto Flex", "Noto Sans HK", "Noto Sans JP", "Noto Color Emoji",
+    sans-serif;
 }
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: "Roboto Flex", "Noto Sans HK", "Noto Sans JP", sans-serif;
+    font-family: "Roboto Flex", "Noto Sans HK", "Noto Sans JP",
+      "Noto Color Emoji", sans-serif;
   }
 }
 body {
+  font-size: 16px;
   background-color: #333333;
-  color: #fffafa;
+  color: #cccccc;
 }
 .header {
   font-size: 48px;
@@ -21,12 +24,10 @@ body {
   padding: 1rem 0rem;
 }
 .ingredient * {
-  font-size: 16px;
   margin: 0rem 3rem;
   padding: 0.5rem;
 }
 .instruction * {
-  font-size: 16px;
   margin: 0rem 3rem;
   padding: 0.5em;
 }
