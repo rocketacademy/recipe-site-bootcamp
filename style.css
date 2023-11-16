@@ -1,0 +1,79 @@
+.background {
+  background-color: bisque;
+}
+
+h1 {
+  color: darkslategrey;
+  font-family: Verdana;
+  text-align: center;
+  padding: 50px;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.border {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.cusine {
+  color: darkslategrey;
+  font-size: 10px;
+  font-family: Verdana;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+a:link {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Verdana;
+  padding-left: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.border-two {
+  border: 1px solid black;
+  background-color: white;
+  width: 600px;
+}
+
+h3,
+h5 {
+  color: darkslategrey;
+  font-family: Verdana;
+  padding-left: 15px;
+}
+
+.prep {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 600px;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cooking {
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
