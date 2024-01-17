@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+body{
+  box-sizing: border-box;
+  background: #333;
+  color: white;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+/* Header */
+
+header{
+  padding: 20px;
+  background: white;
+  color: black;
+  justify-self: stretch;
+  text-align: center;
+}
+
+/* Recipe container */
+
+h2{
+  text-align: center;
+}
+
+.chinese-cuisine{
+  background: white;
+  color: #333;
+}
+
+.cuisine-heading-left{
+  text-align: start;
+}
+
+.cuisine-heading-right{
+  text-align: end;
+}
+
+.recipe-container{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  /* padding-top: 30px; */
+}
+
+.chinese{
+  display: flex;
+  gap: 30px;
+}
+
+.cuisine-header{
+  /* background:white; */
+  /* color: black; */
+  padding: 10px;
+}
+
+.cuisine-recipes{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cuisine-recipe{
+  padding: 30px;
+}
+
+ol{
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.cuisine-recipe > ol > li{
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.end{
+  align-self: flex-end;
+  /* display: inline-block; */
+}
