@@ -15,8 +15,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. Clone the repository to your local machine:
    ```shell
-   git clone https://github.com/your-username/all-oven-recipes.git
-
+   git clone https://github.com/nordic-roast/recipe-site-bootcamp.git
+   
 2. Open the index.html file in a browser to view the project. 
 
 ### Usage
