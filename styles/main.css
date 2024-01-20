@@ -11,9 +11,16 @@ body {
     padding: 2rem;
 }
 
-.other-cuisines {
+.other-cuisines{
     display: flex;
     flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
 }
 
 /* Title and Heading Styles */
@@ -30,6 +37,7 @@ body {
     justify-content: center;
 }
 
+
 .recipe-item {
     width: 300px;
     height: auto;
@@ -40,6 +48,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     transform-origin: center;
+    cursor: pointer;
+    
 }
 
 .recipe-item-link {

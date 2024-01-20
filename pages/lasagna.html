@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Italian Lasagna Recipe</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon"
+        href="https://assets-global.website-files.com/63272a4884915258a601e154/63f5d1fbd33aa94a63f0cf93_Rocket%20Favicon.png">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const toggleButton = document.getElementById('darkModeToggle');
+
+            toggleButton.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+</head>
+
+<body class="flex-container">
+    <div class="flex-center">
+
+        <div class="recipe-header">
+            <h1>Italian Beef Lasagna</h1>
+        </div>
+
+        <div class="flex-container" style="margin-bottom: 24px;">
+            <button id="darkModeToggle" class="btn-secondary">
+                <i class="fa fa-moon margin-right"></i>
+                Dark Mode
+            </button>
+        </div>
+
+        <img src="https://myfoodbook.com.au/sites/default/files/styles/card_c_xw_wp/public/recipe_photo/Classic_beef_lasagne.jpg" width="400px"
+            alt="Italian Beef Lasagne">
+        <div class="recipe-content flex-center">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>12 lasagna noodles</li>
+                <li>1 pound ground beef</li>
+                <li>1 onion, chopped</li>
+                <li>4 cloves garlic, minced</li>
+                <li>2 cups ricotta cheese</li>
+                <li>1 cup grated Parmesan cheese</li>
+                <li>3 cups shredded mozzarella cheese</li>
+                <li>3 cups marinara sauce</li>
+                <li>2 tablespoons olive oil</li>
+                <li>1 teaspoon salt</li>
+                <li>1/2 teaspoon black pepper</li>
+                <li>2 tablespoons fresh basil, chopped</li>
+            </ul>
+
+            <h2>Directions</h2>
+            <ol>
+                <li>Preheat the oven to 375 degrees F (190 degrees C).</li>
+                <li>Cook the lasagna noodles in a large pot of boiling salted water for 10 minutes, or until al dente. Drain.</li>
+                <li>In a skillet, cook ground beef, onion, and garlic over medium heat until browned. Drain excess fat.</li>
+                <li>Stir in marinara sauce, salt, and pepper. Simmer for 5 minutes.</li>
+                <li>In a bowl, mix ricotta cheese, 1/2 cup Parmesan, basil, and egg.</li>
+                <li>Spread 1 cup of meat sauce in the bottom of a 9x13 inch baking dish. Arrange 6 noodles lengthwise over meat sauce.  </li>
+                <li>Bake in preheated oven for 25 minutes. Remove foil, and bake an additional 25 minutes. Cool for 15 minutes before serving.</li>
+            </ol>
+        </div>
+
+        <section class="container other-cuisines">
+            <h3>Quick links</h3>
+            <div>
+                <span class="btn-primary">
+                    <i class="fa fa-chevron-left margin-right"></i><a href="./italian-bakes.html">Back to previous</a>
+                </span>
+                <span class="btn-secondary">
+                    <i class="fa fa-home margin-right"></i><a href="../index.html">Return to home</a>
+                </span>
+                <span class="btn-secondary" onclick="window.print();"">
+                    <i class=" fa fa fa-print margin-right"></i>Print
+                </span>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
