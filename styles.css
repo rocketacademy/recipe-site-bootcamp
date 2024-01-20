@@ -10,80 +10,78 @@ body{
   box-sizing: border-box;
   background: #333;
   color: white;
-  /* display: flex;
+}
+
+.index-box{
+  display: flex; 
   flex-direction: column;
-  align-items: center; */
-}
-
-/* Header */
-
-header{
-  padding: 20px;
-  background: white;
-  color: black;
-  justify-self: stretch;
-  text-align: center;
-}
-
-/* Recipe container */
-
-h2{
-  text-align: center;
-}
-
-.chinese-cuisine{
-  background: white;
-  color: #333;
-}
-
-.cuisine-heading-left{
-  text-align: start;
-}
-
-.cuisine-heading-right{
-  text-align: end;
-}
-
-.recipe-container{
-  display: grid;
-  grid-template-columns:repeat(2, 1fr);
-  /* padding-top: 30px; */
-}
-
-.chinese{
-  display: flex;
-  gap: 30px;
-}
-
-.cuisine-header{
-  /* background:white; */
-  /* color: black; */
-  padding: 10px;
-}
-
-.cuisine-recipes{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.cuisine-recipe{
+  align-items: center;
+  gap: 20px;
   padding: 30px;
 }
 
-ol{
+.index-box ul li{
   font-size: 20px;
   margin-bottom: 10px;
-  line-height: 1.5;
 }
 
-.cuisine-recipe > ol > li{
-  font-size: 16px;
-  margin-bottom: 10px;
-  line-height: 1.5;
+.index-box ul li a{
+  color: white;
+
 }
 
-.end{
-  align-self: flex-end;
-  /* display: inline-block; */
+.cuisine-heading{
+  font-size: 36px;
+  text-align: center;
+}
+
+.cuisine-box{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 30px;
+}
+
+.cuisine-box a{
+  display: block;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.recipe-heading{
+  text-align: center;
+}
+
+.recipe-box{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.recipe-description-box p{
+  word-spacing: 1.5px;
+}
+
+
+.recipe-steps-box,
+.recipe-ingredients-box,
+.recipe-description-box{
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+
+  /* align-items: center; */
+}
+
+
+
+.recipe-prep-time{
+  color: rgb(225, 30, 0);
 }
