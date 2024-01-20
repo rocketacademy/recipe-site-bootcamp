@@ -2,19 +2,54 @@
 <html>
 
 <head>
-  <title>The Best Recipes!</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>All Oven Recipes</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon"
+    href="https://assets-global.website-files.com/63272a4884915258a601e154/63f5d1fbd33aa94a63f0cf93_Rocket%20Favicon.png">
 </head>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const toggleButton = document.getElementById('darkModeToggle');
+
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  });
+</script>
 
 <body>
-  <h1>Recipes for those who are busy professionals</h1>
-  <p></p>
-  <h2 class="override">Cuisine index</h2>
-  <a class="btn-primary"
-      href="./cuisines.html">
-      View Yummy Cuisines
-  </a>
+
+  <div class="container section-title">
+    <span class="title-heading">
+      All Oven Recipe Homepage
+    </span>
+  </div>
+
+  <div class="flex-container">
+    <button id="darkModeToggle" class="btn-secondary">
+      <i class="fa fa-moon margin-right"></i>
+      Dark Mode
+    </button>
+  </div>
+
+  <div class="recipe-list">
+    <a href="./pages/mexican-bakes.html" class="recipe-item-link">
+      <div class="recipe-item">
+        <img width="300px" height="200px"
+          src="https://elpollonorteno.net/wp-content/uploads/tacos3-fp-scaled-2560x1280.jpg">
+        <div class="recipe-title">Mexican specialty</div>
+      </div>
+    </a>
+
+    <a href="./pages/italian-bakes.html" class="recipe-item-link">
+      <div class="recipe-item">
+        <img width="300px" height="200px"
+          src="https://www.the-pasta-project.com/wp-content/uploads/sicilian-baked-pasta-2-001-640x433.jpg">
+        <div class="recipe-title">Italian specialty</div>
+      </div>
+    </a>
 </body>
 
 </html>
- 
