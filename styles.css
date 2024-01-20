@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+body{
+  position: relative;
+  box-sizing: border-box;
+  background: #333;
+  color: white;
+}
+
+.index-box{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.index-box ul li{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.index-box ul li a{
+  color: white;
+
+}
+
+.cuisine-heading{
+  font-size: 36px;
+  text-align: center;
+}
+
+.cuisine-box{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 30px;
+}
+
+.cuisine-box a{
+  display: block;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.recipe-heading{
+  text-align: center;
+}
+
+.recipe-box{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.recipe-description-box p{
+  word-spacing: 1.5px;
+}
+
+.recipe-header{
+  position: fixed;
+  /* display: flex;
+  justify-content: flex-end; */
+}
+
+.recipe-header a:link,
+.recipe-header a:visited{
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
+.recipe-steps-box,
+.recipe-ingredients-box,
+.recipe-description-box{
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+
+  /* align-items: center; */
+}
+
+.recipe-prep-time{
+  color: rgb(225, 30, 0);
+}
