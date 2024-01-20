@@ -7,6 +7,7 @@
 }
 
 body{
+  position: relative;
   box-sizing: border-box;
   background: #333;
   color: white;
@@ -67,6 +68,22 @@ body{
   word-spacing: 1.5px;
 }
 
+.recipe-header{
+  position: fixed;
+  /* display: flex;
+  justify-content: flex-end; */
+}
+
+.recipe-header a:link,
+.recipe-header a:visited{
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid #fff;
+  text-decoration: none;
+}
 
 .recipe-steps-box,
 .recipe-ingredients-box,
@@ -79,8 +96,6 @@ body{
 
   /* align-items: center; */
 }
-
-
 
 .recipe-prep-time{
   color: rgb(225, 30, 0);
