@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homemade Chicken Soup</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Homemade Chicken Soup</h1>
+    <div>
+      <h2 class="title">Chicken Soup Ingredients</h2>
+      <p>
+        These are the simple ingredients you'll need for this chicken soup
+        recipe:
+      </p>
+
+      <div class="ingredient-list-container">
+        <ul class="ingredient-list">
+          <li>
+            <strong>Chicken</strong>: 3-pound whole chicken.
+          </li>
+          <li>
+            <strong>Vegetables</strong>: Carrots, celery, and an
+            onion.
+          </li>
+          <li>
+            <strong>Seasonings:</strong> Salt, pepper, & chicken bouillon granules
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2 class="title">Cooking Details</h2>
+      <p>Here are the cooking details for this recipe:</p>
+
+      <table class="table">
+        <tr>
+          <th>Prep Time</th>
+          <th>Cook Time</th>
+          <th>Servings</th>
+        </tr>
+        <tr>
+          <td>15 mins</td>
+          <td>1 hr 30 mins</td>
+          <td>10</td>
+        </tr>
+      </table>
+    </div>
+    <h2 class="title">Instructions</h2>
+    <p>Follow these steps to whip up a good meal!</p>
+      <div class="ingredient-list-container">
+        <ol class="ingredient-list">
+          <li>
+            Bring chicken, water, and 1 tablespoon salt to a boil in a large stockpot.
+          </li>
+          <li>
+          Skim foam. Add onions, celery, and garlic. Reduce heat. Simmer for 30 minutes.
+          </li>
+          <li>
+            Remove chicken breast, and set aside. Add carrots. Simmer for 40 minutes.
+          </li>
+          <li>
+            Discard back and wing. Cool slightly. Remove meat from bones. Cut into bite-size pieces.
+          </li>
+          <li>
+            Stir in desired amount of chicken. Skim fat. Season with salt.
+          </li>
+        </ol>
+      </div>
+    <img
+      width="400"
+      height="300"
+      src="./pictures/chicken-soup.jpg"
+      alt="Picture of chicken soup"
+      class="recipe-pic"
+    />
+
+    <br />
+    <br />
+
+    <button class="btn-primary" onclick="navigateToCuisine()">
+      View Japanese Cuisines
+    </button>
+    <br />
+    <br />
+
+    <button class="btn-secondary" onclick="window.print();">
+      Print Recipe
+    </button>
+    <br />
+    <br />
+
+    <button class="btn-secondary" onclick="navigateToHome()">
+      Back to Home
+    </button>
+  </body>
+  <script>
+    function navigateToHome() {
+      window.location.href = "./index.html";
+    }
+    function navigateToCuisine() {
+      window.location.href = "./japanese-recipes.html";
+    }
+  </script>
+</html>

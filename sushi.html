@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yellowtail Roll (Negihama Maki)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Yellowtail Roll (Negihama Maki)</h1>
+    <div>
+      <h2 class="title">Yellowtail Roll Ingredients</h2>
+      <p>
+        These are the simple ingredients you'll need for this delicious recipe:
+      </p>
+
+      <div class="ingredient-list-container">
+        <ul class="ingredient-list">
+          <li>1½ cups sushi rice (cooked and seasoned)</li>
+          <li>3.3 oz sashimi-grade yellowtail (chopped and divided)</li>
+          <li>1 sheet nori (dried laver seaweed)</li>
+          <li>3 Tbsp green onions/scallions (chopped and divided)</li>
+          <li>Soy sauce, wasbi for serving</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2 class="title">Cooking Details</h2>
+      <p>Here are the cooking details for this recipe:</p>
+
+      <table class="table">
+        <tr>
+          <th>Prep Time</th>
+          <th>Cook Time</th>
+          <th>Servings</th>
+        </tr>
+        <tr>
+          <td>30 mins</td>
+          <td>30 mins</td>
+          <td>3</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2 class="title">Instructions</h2>
+    <p>Follow these steps to whip up a good meal!</p>
+    <div class="ingredient-list-container">
+      <ol class="ingredient-list">
+        <li>
+          Cut 3.3 oz sashimi-grade yellowtail into ¼-inch (6-mm) cube. Chop into
+          smaller pieces.
+        </li>
+        <li>Finely chop 3 Tbsp green onions/scallions.</li>
+        <li>Cut your 1 sheet nori (dried laver seaweed) in half crosswise.</li>
+        <li>
+          Lay ½ sheet nori, shiny side down, on the plastic-covered bamboo mat.
+        </li>
+        <li>Spread ¾ cup (110 g) of the rice evenly onto the nori sheet.</li>
+        <li>
+          Divide the chopped yellowtail and spread one portion on the sushi rice
+          across the nori sheet.
+        </li>
+        <li>
+          Divide the chopped green onions and spread one portion alongside the
+          yellowtail.
+        </li>
+        <li>
+          Lift up the mat and nori while holding the fillings with your fingers.
+          Roll it into a tight cylinder.
+        </li>
+        <li>
+          Lift the edge of the bamboo mat and roll it forward while keeping
+          gentle pressure on the mat.
+        </li>
+        <li>
+          With a sharp knife, cut the roll in half crosswise. Cut each half into
+          3–4 sushi roll pieces.
+        </li>
+        <li>Clean the knife with a damp cloth every few slices.</li>
+        <li>Serve the sushi with wasabi and soy sauce on the side.</li>
+      </ol>
+    </div>
+
+    <img
+      width="400"
+      height="300"
+      src="./pictures/sushi.jpg"
+      alt="Picture of Yellowtail Roll"
+      class="recipe-pic"
+    />
+
+    <br />
+    <br />
+
+    <button class="btn-primary" onclick="navigateToCuisine()">
+      View Chinese Cuisines
+    </button>
+    <br />
+    <br />
+
+    <button class="btn-secondary" onclick="window.print();">
+      Print Recipe
+    </button>
+    <br />
+    <br />
+
+    <button class="btn-secondary" onclick="navigateToHome()">
+      Back to Home
+    </button>
+  </body>
+  <script>
+    function navigateToHome() {
+      window.location.href = "./index.html";
+    }
+    function navigateToCuisine() {
+      window.location.href = "./chinese-recipes.html";
+    }
+  </script>
+</html>

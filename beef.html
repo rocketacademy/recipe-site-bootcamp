@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Japanese Beef Curry</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Japanese Beef Curry</h1>
+    <div>
+      <h2 class="title">Beef Curry Ingredients</h2>
+      <p>
+        These are the simple ingredients you'll need for this delicious recipe:
+      </p>
+
+      <div class="ingredient-list-container">
+        <ul class="ingredient-list">
+          <li>1 tablespoon olive oil</li>
+          <li>1 pound beef stew meat, cut into 1/2-inch cubes</li>
+          <li>2 medium onions, diced</li>
+          <li>5 medium carrots, cut into 1/4-inch rounds</li>
+          <li>6 cups warm water, or more as needed</li>
+          <li>3 large potatoes, peeled and cut into 1/2-inch cubes</li>
+          <li>
+            2 (3.5 ounce) containers curry sauce mix (such as S&B® Golden
+            Curry®)
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2 class="title">Cooking Details</h2>
+      <p>Here are the cooking details for this recipe:</p>
+
+      <table class="table">
+        <tr>
+          <th>Prep Time</th>
+          <th>Cook Time</th>
+          <th>Servings</th>
+        </tr>
+        <tr>
+          <td>15 mins</td>
+          <td>25 mins</td>
+          <td>6</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2 class="title">Instructions</h2>
+    <p>Follow these steps to whip up a good meal!</p>
+    <div class="ingredient-list-container">
+      <ol class="ingredient-list">
+        <li>
+          Season meat with salt and pepper. Heat oil over medium high heat in a
+          large skillet.
+        </li>
+        <li>
+          Add beef and cook, flipping once, until deeply golden, 3 to 5 minutes
+          per side. Transfer to a plate.
+        </li>
+        <li>Add onion to skillet and cook until soft, about 5 minutes.</li>
+        <li>
+          Add garlic, ginger, and spices and cook until fragrant, 1 minute.
+        </li>
+        <li>Add coconut milk and bring to a simmer.</li>
+        <li>
+          Lower heat to low, add beef, and continue to simmer until fork tender,
+          about 1 1/2 hours.
+        </li>
+        <li>Serve with yogurt, naan, and lime wedges.</li>
+      </ol>
+    </div>
+
+    <img
+      width="400"
+      height="300"
+      src="./pictures/beef-curry.jpg"
+      alt="Picture of Japanese beef curry"
+      class="recipe-pic"
+    />
+
+    <br />
+    <br />
+
+    <button class="btn-primary" onclick="navigateToCuisine()">
+      View Chinese Cuisines
+    </button>
+    <br />
+    <br />
+
+    <button class="btn-secondary" onclick="window.print();">
+      Print Recipe
+    </button>
+    <br />
+    <br />
+
+    <button class="btn-secondary" onclick="navigateToHome()">
+      Back to Home
+    </button>
+  </body>
+  <script>
+    function navigateToHome() {
+      window.location.href = "./index.html";
+    }
+    function navigateToCuisine() {
+      window.location.href = "./chinese-recipes.html";
+    }
+  </script>
+</html>

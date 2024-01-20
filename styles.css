@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(22, 22, 22);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: yellow;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#home-picture {
+  border-radius: 12px;
+  transition: 0.3s ease-in-out; /* Added transition property */
+}
+
+#home-picture:hover {
+  transform: scale(1.05); /* Changed scale property */
+  opacity: 1;
+}
+
+.cuisine-picture {
+  border-radius: 12px;
+  transition: 0.3s ease-in-out; /* Added transition property */
+  
+}
+
+.pic-text {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 170px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.cuisine-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cuisine-container:hover .cuisine-picture {
+  opacity: 0.2;
+}
+
+.cuisine-container:hover .pic-text {
+  opacity: 1;
+}
+
+.btn-primary {
+  background-color: #5f5ce9;
+  border: 3px solid #2a28b9;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.1rem;
+  width: 350px;
+  padding: 12px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease-in-out; /* Add transition here */
+}
+
+.btn-primary:hover {
+  background-color: #4442c7;
+}
+
+.btn-secondary {
+  border: 3px solid #434343;
+  border-radius: 6px;
+  color: black;
+  font-size: 1.1rem;
+  width: 350px;
+  padding: 12px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease-in-out; /* Add transition here */
+}
+
+.btn-secondary:hover {
+  background-color: #979797;
+  color: white;
+}
+
+.ingredient-list {
+  text-align: left;
+}
+.ingredient-list li {
+  margin-bottom: 10px;
+}
+
+.ingredient-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 40px auto;
+}
+
+.table th {
+  background-color: #42d0ff;
+  color: #093c4d;
+  padding: 10px;
+  text-align: center;
+}
+
+.table td {
+  border: 1px solid #7185f5;
+  padding: 10px;
+}
+
+.recipe-pic {
+  border-radius: 12px;
+  height:auto
+}
