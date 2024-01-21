@@ -1,0 +1,156 @@
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.other-cuisines{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+/* Title and Heading Styles */
+.title-heading {
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, .95);
+    font-size: 2rem;
+}
+
+/* Recipe List and Item Styles */
+.recipe-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.recipe-item {
+    width: 300px;
+    height: auto;
+    margin: 24px;
+    padding: 8px;
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform-origin: center;
+    cursor: pointer;
+    
+}
+
+.recipe-item-link {
+    text-decoration: none;
+    /* Removes underline from text */
+    color: inherit;
+    /* Ensures text color stays consistent */
+}
+
+.recipe-item-link:hover {
+    /* Add any hover effects if needed */
+}
+
+.recipe-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-type {
+    font-size: 1rem;
+}
+
+.recipe-title {
+    font-size: 1.2rem;
+    padding: 4px 0;
+}
+
+/* Button Styles */
+.btn-primary,
+.btn-secondary {
+    padding: 0.5rem 1rem;
+    max-width: 150px;
+    text-align: center;
+    color: #fff;
+    background-color: maroon;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-primary a,
+.btn-secondary a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #800000;
+    opacity: 60%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: maroon;
+    /* Maroon text for secondary button */
+    border: 2px solid maroon;
+}
+
+.btn-secondary:hover {
+    background-color: #ffe6e6;
+    color: #800000;
+    /* Darker maroon on hover */
+    cursor: pointer;
+    border-color: #800000;
+}
+
+.margin-right {
+    margin-right: 8px;
+}
+
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
+}
+
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode span.title-heading {
+    color: white;
+}
+
+/* You can also target specific elements in dark mode */
+.dark-mode .recipe-item {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+ 
