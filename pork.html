@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chinese Pork Dumplings</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Chinese Pork Dumplings</h1>
+    <div>
+      <h2 class="title">Pork Dumplings Ingredients</h2>
+      <p>
+        These are the simple ingredients you'll need for this delicious recipe:
+      </p>
+
+      <div class="ingredient-list-container">
+        <ul class="ingredient-list">
+          <li>1 pound ground pork</li>
+          <li>3 cloves garlic, minced</li>
+          <li>1 large egg, beaten</li>
+          <li>2 tablespoons finely chopped Chinese chives</li>
+          <li>2 tablespoons soy sauce</li>
+          <li>1 ½ tablespoons sesame oil</li>
+          <li>1 tablespoon minced fresh ginger</li>
+          <li>½ cup vegetable oil for frying, or as needed</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2 class="title">Cooking Details</h2>
+      <p>Here are the cooking details for this recipe:</p>
+
+      <table class="table">
+        <tr>
+          <th>Prep Time</th>
+          <th>Cook Time</th>
+          <th>Servings</th>
+        </tr>
+        <tr>
+          <td>20 mins</td>
+          <td>60 mins</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2 class="title">Instructions</h2>
+    <p>Follow these steps to whip up a good meal!</p>
+    <div class="ingredient-list-container">
+      <ol class="ingredient-list">
+        <li>
+          Combine soy sauce, rice vinegar, chives, sesame seeds, and chile sauce
+          in a small bowl. Set aside.
+        </li>
+        <li>
+          Mix pork, garlic, egg, chives, soy sauce, sesame oil, and ginger until thoroughly combined.
+        </li>
+        <li>
+          Place a dumpling wrapper on a lightly floured work surface and spoon
+          1 tablespoon of the filling in the middle.
+        </li>
+        <li>
+          Wet the edge with water and form small
+          pleats to seal the dumpling. Repeat.
+        </li>
+        <li>
+          Heat 1 to 2 tablespoons vegetable oil in a large skillet over
+          medium-high heat.
+        </li>
+        <li>
+          Place 8 to 10 dumplings in the pan and cook until browned, about 2
+          minutes per side.
+        </li>
+        <li>
+          Pour in 1 cup of water; cover and cook till tender
+          and pork is cooked through, about 5 minutes.
+        </li>
+        <li>
+          Repeat to cook remaining dumplings, adding more oil and water for each
+          batch.
+        </li>
+        <li>Serve dumplings with dipping sauce.</li>
+      </ol>
+    </div>
+
+    <img
+      width="400"
+      height="300"
+      src="./pictures/pork-dumplings.jpg"
+      alt="Picture of Chinese Pork Dumplings"
+      class="recipe-pic"
+    />
+
+    <br />
+    <br />
+
+    <button class="btn-primary" onclick="navigateToCuisine()">
+      View Japanese Cuisines
+    </button>
+    <br />
+    <br />
+
+    <button class="btn-secondary" onclick="window.print();">
+      Print Recipe
+    </button>
+    <br />
+    <br />
+
+    <button class="btn-secondary" onclick="navigateToHome()">
+      Back to Home
+    </button>
+  </body>
+  <script>
+    function navigateToHome() {
+      window.location.href = "./index.html";
+    }
+    function navigateToCuisine() {
+      window.location.href = "./japanese-recipes.html";
+    }
+  </script>
+</html>

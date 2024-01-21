@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chinese Cuisine</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Chinese Cuisine</h1>
+
+    <h2 class="title">Homemade Chicken Soup</h2>
+
+    <div class="cuisine-container">
+      <a href="./chicken.html">
+        <img
+          width="600"
+          height="400"
+          src="./pictures/chicken-soup.jpg"
+          alt="Picture of Homemade Chicken Soup"
+          class="cuisine-picture"
+        />
+      </a>
+      <p class="pic-text">View Recipe</p>
+    </div>
+
+    <h2 class="title">Chinese Pork Dumplings</h2>
+    <div class="cuisine-container">
+      <a href="./pork.html">
+        <img
+          width="600"
+          height="400"
+          src="./pictures/pork-dumplings.jpg"
+          alt="Picture of Chinese Pork Dumplings"
+          class="cuisine-picture"
+        />
+      </a>
+      <p class="pic-text">View Recipe</p>
+    </div>
+    <button class="btn-secondary" onclick="navigateToHome()">Back to Home</button>
+  </body>
+  <script>
+    function navigateToHome() {
+      window.location.href = "./index.html";
+    }
+  </script>
+</html>

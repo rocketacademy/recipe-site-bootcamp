@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Japanese Cuisine</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Japanese Cuisine</h1>
+
+    <h2 class="title">Japanese Beef Curry</h2>
+
+    <div class="cuisine-container">
+      <a href="./beef.html">
+        <img
+          width="600"
+          height="400"
+          src="./pictures/beef-curry.jpg"
+          alt="Picture of Japanese Beef Curry"
+          class="cuisine-picture"
+        />
+      </a>
+      <p class="pic-text">View Recipe</p>
+    </div>
+
+    <h2 class="title">Yellowtail Rolls</h2>
+    <div class="cuisine-container">
+      <a href="./sushi.html">
+        <img
+          width="600"
+          height="400"
+          src="./pictures/sushi.jpg"
+          alt="Picture of Yellowtail Roll"
+          class="cuisine-picture"
+        />
+      </a>
+      <p class="pic-text">View Recipe</p>
+    </div>
+    <button class="btn-secondary" onclick="navigateToHome()">Back to Home</button>
+  </body>
+  <script>
+    function navigateToHome() {
+      window.location.href = "./index.html";
+    }
+  </script>
+</html>
