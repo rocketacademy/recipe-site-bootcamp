@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Satay</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="my-3 text-center">Satay</h1>
+      <p class="my-3 text-center lead">
+        <a class="btn btn-primary btn-lg" href="index.html" role="button"
+          >Home</a
+        >
+      </p>
+      <div class="bg-light horizontal-empty"></div>
+      <div class="text-center">
+        <img src="./food-imgs/satay.jpeg" style="width: 25%" />
+      </div>
+      <div class="bg-light horizontal-empty"></div>
+
+      <div class="accordion mb-3" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h2>More about satay</h2>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Delicious Malay skewered meats (usually chicken, mutton) served
+                alongside vegetables and a tasty tangy peanut-y sauce
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <h2>How to cook satay</h2>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h3>Preparation time: 45 mins</h3>
+              <h3>Ingredients</h3>
+              <ul>
+                <li>Diced chicken</li>
+                <li>Spices (ginger, lemongrass, garlic, onion, sambal)</li>
+                <li>Peanut</li>
+                <li>Pineapple</li>
+                <li>Cucumbers and raw onions</li>
+              </ul>
+              <h3>Steps</h3>
+              <table>
+                <tr>
+                  <th>Step</th>
+                  <th>Procedure</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Marinate the diced chicken in spices and skewer them</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    Cook the diced chicken over a barbequeue flame until
+                    slightly charred
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    Blend the pineapples and peanuts together to make the sauce
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    Serve the satay skewers together with sauce, cucumbers and
+                    raw onions
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
